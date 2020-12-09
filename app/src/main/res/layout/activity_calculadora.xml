@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.engtechi.extinfire.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Método para levantamento de carga de incêndio"
+                android:textSize="10pt"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAllCaps="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:id="@+id/textArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textSubtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Insira a área construída da edificação"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="9pt" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="vertical"></LinearLayout>
+            <TextView
+                android:id="@+id/textSubtitulo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Insira a massa dos materiais existentes na edificação (KG)"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="9pt" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textTituloAcetona1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Acetona - H = 30 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/textAcetona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textAcrilico1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Acrilico - H = 28 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textAcrilico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+
+                />
+
+            <TextView
+                android:id="@+id/textAlgodao1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Algodão - H = 18 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textAlgodao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+
+                />
+            <TextView
+                android:id="@+id/textBenzeno1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Benzeno - H = 40 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textBenzeno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+
+                />
+            <TextView
+                android:id="@+id/textBorrachaEspuma1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Borracha Espuma - H = 37 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textBorrachaEspuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+
+                />
+
+            <TextView
+                android:id="@+id/textBorrachaTiras1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Borracha Tiras - H = 32 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textBorrachaTiras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textCalulose1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Celulose - H = 16 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textCelulose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textC-Hexano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C-Hexano - H = 43 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textC-Hexano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textCouro1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Couro - H = 19 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textCouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+            <TextView
+                android:id="@+id/textD-Glucose1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D-Glucose - H = 15 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textD-Glucose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+            <TextView
+                android:id="@+id/textEpoxi1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Epóxi - H = 34 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textEpoxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/textEtano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Etano - H = 47 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textEtano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+            <TextView
+                android:id="@+id/textEtanol1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Etanol - H = 26 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textEtanol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+            <TextView
+                android:id="@+id/textEteno1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Eteno - H = 50 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+            <EditText
+                android:id="@+id/textEteno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+            <TextView
+                android:id="@+id/textEtino1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Etino - H = 48 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textEtino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+            <TextView
+                android:id="@+id/textFibraSintetica1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fibra Sintética 6,6 - H = 29 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textFibraSintetica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+            <TextView
+                android:id="@+id/textGraos1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Graos - H = 17 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textGraos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textGraxaLub1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Graxa/Lubrificante - H = 41 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textGraxaLub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textLa1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lã - H = 23 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textLa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textLixodeCozinha1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lixo de Cozinha - H = 18 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textLixodeCozinha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textMadeira1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Madeira - H = 19 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textMadeira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textMetano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Metano - H = 50 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textMetano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textMetanol1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Metanol - H = 19 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textMetanol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textMonoxidodecarbono1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Monóxido de Carbono - H = 10 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textMonoxidodecarbono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+            <TextView
+                android:id="@+id/textNButano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="N-Butano - H = 45 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textNButano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textNOctano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="N-Octano - H = 44 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textNOctano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:id="@+id/textNPentano1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="N-Pentano - H = 45 (MJ/kg)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <EditText
+                android:id="@+id/textNPentano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULAR" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textSize="9pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textRisco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="9pt"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textCapextintoraA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/textDistanciamaxA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textCapextintoraB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/textDistanciamaxB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textCapextintoraC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textCapextintoraD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textCapextintoraK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8pt" />
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
