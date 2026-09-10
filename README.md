@@ -147,16 +147,6 @@ docs/           documentação do projeto
 Contribuições são bem-vindas. Veja o [guia de contribuição](./CONTRIBUTING.md).
 O código é escrito em inglês e a documentação em português.
 
-## Apoie
-
-Se a ferramenta te ajudou, você pode me pagar uma cerveja:
-https://buymeacoffee.com/cristhianlh
-
-## Contato
-
-- E-mail: asz.advsys@gmail.com
-- CNPJ 57.488.277/0001-22, Uberlândia/MG
-
 ## Licença
 
 Distribuído sob a licença [MIT](./LICENSE).
