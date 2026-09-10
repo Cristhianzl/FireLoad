@@ -1,0 +1,42 @@
+{
+  "it14": {
+    "id": "it14",
+    "code": "IT 14/2025",
+    "title": "Carga de incêndio nas edificações e áreas de risco",
+    "org": "Corpo de Bombeiros da Polícia Militar do Estado de São Paulo (CBPMESP)",
+    "year": 2025,
+    "url": "https://www.corpodebombeiros.sp.gov.br/"
+  },
+  "it21": {
+    "id": "it21",
+    "code": "IT 21/2025",
+    "title": "Sistema de proteção por extintores de incêndio",
+    "org": "Corpo de Bombeiros da Polícia Militar do Estado de São Paulo (CBPMESP)",
+    "year": 2025,
+    "url": "https://www.corpodebombeiros.sp.gov.br/"
+  },
+  "nbr12693": {
+    "id": "nbr12693",
+    "code": "ABNT NBR 12693:2021",
+    "title": "Sistemas de proteção por extintores de incêndio",
+    "org": "Associação Brasileira de Normas Técnicas (ABNT)",
+    "year": 2021,
+    "url": "https://www.abnt.org.br/"
+  },
+  "nbr14432": {
+    "id": "nbr14432",
+    "code": "ABNT NBR 14432:2001",
+    "title": "Exigências de resistência ao fogo de elementos construtivos de edificações",
+    "org": "Associação Brasileira de Normas Técnicas (ABNT)",
+    "year": 2001,
+    "url": "https://www.abnt.org.br/"
+  },
+  "tcc": {
+    "id": "tcc",
+    "code": "TCC UFU 2018",
+    "title": "Aplicativo para cálculo de cargas de incêndio específicas",
+    "org": "Universidade Federal de Uberlândia (UFU)",
+    "year": 2018,
+    "url": "https://repositorio.ufu.br/handle/123456789/21983"
+  }
+}

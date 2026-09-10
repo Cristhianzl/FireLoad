@@ -1,0 +1,4856 @@
+[
+{
+"descricao": "Alojamentos estudantis",
+"grupo": "Residencial",
+"divisao": "A-3",
+"carga": 300
+},
+{
+"descricao": "Apartamentos",
+"grupo": "Residencial",
+"divisao": "A-2",
+"carga": 300
+},
+{
+"descricao": "Casas térreas ou sobrados",
+"grupo": "Residencial",
+"divisao": "A-1",
+"carga": 300
+},
+{
+"descricao": "Pensionatos",
+"grupo": "Residencial",
+"divisao": "A-3",
+"carga": 300
+},
+{
+"descricao": "Alojamento de animais domésticos",
+"grupo": "Residencial",
+"divisao": "A-3",
+"carga": 300
+},
+{
+"descricao": "Outros alojamentos não especificados anteriormente",
+"grupo": "Residencial",
+"divisao": "A-3",
+"carga": 300
+},
+{
+"descricao": "Hotéis",
+"grupo": "Serviços de hospedagem",
+"divisao": "B-1",
+"carga": 500
+},
+{
+"descricao": "Motéis",
+"grupo": "Serviços de hospedagem",
+"divisao": "B-1",
+"carga": 500
+},
+{
+"descricao": "Albergues, exceto assistenciais",
+"grupo": "Serviços de hospedagem",
+"divisao": "B-1",
+"carga": 500
+},
+{
+"descricao": "Campings (sem área construída) ³",
+"grupo": "Serviços de hospedagem",
+"divisao": "B-1",
+"carga": 300
+},
+{
+"descricao": "Apart-hotéis",
+"grupo": "Serviços de hospedagem",
+"divisao": "B-2",
+"carga": 500
+},
+{
+"descricao": "Comércio a varejo de automóveis, camionetas e utilitários novos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio a varejo de automóveis, camionetas e utilitários usados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio por atacado de caminhões novos e usados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio por atacado de ônibus e microônibus novos e usados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio sob consignação de veículos automotores",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio por atacado de motocicletas e motonetas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio a varejo de motocicletas e motonetas novas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio a varejo de motocicletas e motonetas usadas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio sob consignação de motocicletas e motonetas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de animais vivos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de fumo em folha não beneficiado",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de sementes, flores, plantas e gramas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 80
+},
+{
+"descricao": "Comércio atacadista de leite e laticínios",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de aves vivas e ovos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de carnes bovinas e suínas e derivados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de aves abatidas e derivados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de pescados e frutos do mar",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de carnes e derivados de outros animais",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de água mineral",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 80
+},
+{
+"descricao": "Comércio atacadista de cerveja, chope e refrigerante",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 80
+},
+{
+"descricao": "Comércio atacadista de fumo beneficiado",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de sorvetes",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 80
+},
+{
+"descricao": "Comércio atacadista de próteses e artigos de ortopedia",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de produtos odontológicos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de lustres, luminárias e abajures",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de equipamentos de informática",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de bombas e compressores; partes e peças",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de ferragens e ferramentas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de material elétrico",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio atacadista de cimento",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de mármores e granitos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio atacadista de vidros, espelhos e vitrais",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de resíduos e sucatas metálicos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio varejista de carnes - açougues",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Peixaria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio varejista de hortifrutigranjeiros",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Tabacaria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio varejista de material elétrico",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de vidros",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de ferragens e ferramentas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de materiais hidráulicos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de pedras para revestimento",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 40
+},
+{
+"descricao": "Comércio varejista de materiais de construção em geral",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Recarga de cartuchos para equipamentos de informática",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de móveis",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de colchoaria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de iluminação",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de armarinho",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de cama, mesa e banho",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "aparelhos eletroeletrônicos para uso doméstico, exceto",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de tapeçaria, cortinas e persianas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comercial",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de papelaria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de discos, CDs, DVDs e fitas",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de brinquedos e artigos recreativos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos esportivos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de bicicletas e triciclos; peças e acessórios",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio varejista de artigos de caça, pesca e camping",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de óptica",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos do vestuário e acessórios",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de calçados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio varejista de artigos de viagem",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de joalheria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos de relojoaria",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de antiguidades",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de outros artigos usados",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de suvenires, bijuterias e artesanatos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de plantas e flores naturais",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 80
+},
+{
+"descricao": "Comércio varejista de objetos de arte",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Comércio varejista de equipamentos para escritório",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de artigos fotográficos e para filmagem",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Locação de automóveis sem condutor",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 200
+},
+{
+"descricao": "Aluguel de equipamentos recreativos e esportivos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de fitas de vídeo, DVDs e similares",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de objetos do vestuário, joias e acessórios",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de aparelhos de jogos eletrônicos",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de material médico",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de máquinas e equipamentos agrícolas sem operador",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de andaimes",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Aluguel de máquinas e equipamentos para escritórios",
+"grupo": "Comercial",
+"divisao": "C-1",
+"carga": 300
+},
+{
+"descricao": "Comércio de colchões",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio varejista de tecidos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio a varejo de pneumáticos e câmaras de ar",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio atacadista de cosméticos e produtos de perfumaria",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio atacadista de produtos de higiene pessoal",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio por atacado de pneumáticos e câmaras-de-ar",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio atacadista de café em grão",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio atacadista de soja",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1700
+},
+{
+"descricao": "Comércio atacadista de algodão",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de cacau",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio atacadista de sisal",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de alimentos para animais",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 2000
+},
+{
+"descricao": "Comércio atacadista de cereais e leguminosas beneficiados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1700
+},
+{
+"descricao": "Comércio atacadista de farinhas, amidos e féculas",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 2000
+},
+{
+"descricao": "farinhas, amidos e féculas, com atividade de fracionamento e",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 2000
+},
+{
+"descricao": "Comércio atacadista de bebidas não especificadas anteriormente",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio atacadista de cigarros, cigarrilhas e charutos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio atacadista de café torrado, moído e solúvel",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio atacadista de açúcar",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de óleos e gorduras",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de pães, bolos, biscoitos e similares",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de massas alimentícias",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de produtos alimentícios em geral",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de tecidos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio atacadista de artigos de cama, mesa e banho",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio atacadista de artigos de armarinho",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio atacadista de calçados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de bolsas, malas e artigos de viagem",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de medicamentos e drogas de uso humano",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de artigos de escritório e de papelaria",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 700
+},
+{
+"descricao": "Comércio atacadista de livros, jornais e outras publicações",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de móveis e artigos de colchoaria",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de artigos de tapeçaria; persianas e cortinas",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio atacadista de filmes, CDs, DVDs, fitas e discos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "conservação domiciliar, com atividade de fracionamento e",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio atacadista de madeira e produtos derivados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 3000
+},
+{
+"descricao": "Comércio atacadista de tintas, vernizes e similares",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio atacadista de materiais de construção em geral",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio atacadista de resinas e elastômeros",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 3000
+},
+{
+"descricao": "Comércio atacadista de solventes",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 4000
+},
+{
+"descricao": "Comércio atacadista de papel e papelão em bruto",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio atacadista de embalagens",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio atacadista de resíduos de papel e papelão",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio atacadista de fios e fibras beneficiados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Comércio varejista de laticínios e frios",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio varejista de doces, balas, bombons e semelhantes",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio varejista de bebidas",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio varejista de mercadorias em lojas de conveniência",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "especializado em produtos alimentícios não especificados",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 400
+},
+{
+"descricao": "Comércio varejista de lubrificantes",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de tintas e materiais para pintura",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de madeira e artefatos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Comércio varejista de cal, areia, pedra britada, tijolos e telhas",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 300
+},
+{
+"descricao": "Comércio varejista de livros",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de jornais e revistas",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de produtos farmacêuticos homeopáticos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de medicamentos veterinários",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de artigos médicos e ortopédicos",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 1000
+},
+{
+"descricao": "Comércio varejista de produtos saneantes domissanitários",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 500
+},
+{
+"descricao": "Comércio varejista de armas e munições",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 800
+},
+{
+"descricao": "Locação de aeronaves sem tripulação",
+"grupo": "Comercial",
+"divisao": "C-2",
+"carga": 600
+},
+{
+"descricao": "Shoppings Centers",
+"grupo": "Comercial",
+"divisao": "C-3",
+"carga": 600
+},
+{
+"descricao": "Gestão de redes de esgoto",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 40
+},
+{
+"descricao": "Atividades relacionadas a esgoto, exceto a gestão de redes",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 40
+},
+{
+"descricao": "Incorporação de empreendimentos imobiliários",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 300
+},
+{
+"descricao": "Administração de obras",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de agenciamento marítimo",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de praticagem",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operação dos aeroportos e campos de aterrissagem",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Comissária de despachos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de despachantes aduaneiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agenciamento de cargas, exceto para o transporte marítimo",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Organização logística do transporte de carga",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operador de transporte multimodal - OTM",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades do Correio Nacional",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de franqueadas e permissionárias do Correio Nacional",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de malote não realizados pelo Correio Nacional",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de entrega rápida",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Edição de jornais diários",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Edição de jornais não diários",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Estúdios cinematográficos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de dublagem",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de mixagem sonora em produção audiovisual",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de gravação de som e de edição de música",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de rádio",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de televisão aberta",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Programadoras",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Telecomunicações por satélite",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operadoras de televisão por assinatura por cabo",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operadoras de televisão por assinatura por micro-ondas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operadoras de televisão por assinatura por satélite",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Desenvolvimento de programas de computador sob encomenda",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Web design",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Consultoria em tecnologia da informação",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agências de notícias",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Peritos e avaliadores de seguros",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Auditoria e consultoria atuarial",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Compra e venda de imóveis próprios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Aluguel de imóveis próprios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Planos de auxílio-funeral",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Corretagem na compra e venda e avaliação de imóveis",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Corretagem no aluguel de imóveis",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Gestão e administração da propriedade imobiliária",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços advocatícios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades auxiliares da justiça",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de contabilidade",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de consultoria e auditoria contábil e tributária",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de arquitetura",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de engenharia",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de cartografia, topografia e geodésia",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de estudos geológicos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de perícia técnica relacionados à segurança do trabalho",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agências de publicidade",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Promoção de vendas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Marketing direto",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Consultoria em publicidade",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Pesquisas de mercado e de opinião pública",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Design de interiores",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Design de produtos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de design não especificadas anteriormente",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de produção de fotografias, exceto aérea e submarina",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de produção de fotografias aéreas e submarinas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Filmagem de festas e eventos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de microfilmagem",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de tradução, interpretação e similares",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agências de viagens",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Operadores turísticos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de adestramento de cães de guarda",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 300
+},
+{
+"descricao": "Atividades de investigação particular",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços combinados de escritório e apoio administrativo",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Fotocópias",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de cobranças e informações cadastrais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de gravação de carimbos, exceto confecção",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Salas de acesso à internet",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Restauração de obras-de-arte",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de associações de defesa de direitos sociais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de organizações associativas ligadas à cultura e à arte",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Cabeleireiros, manicure e pedicure",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agências matrimoniais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de tatuagem e colocação de piercing",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de alojamento de animais domésticos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de higiene e embelezamento de animais domésticos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Gestão e manutenção de cemitérios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de cremação",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de sepultamento",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de funerárias",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de somatoconservação",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços domésticos",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Armazéns gerais - emissão de warrant",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de teleatendimento",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Sociedade seguradora de seguros de vida",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Sociedade seguradora de seguros não-vida",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Sociedade seguradora de seguros saúde",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Resseguros",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Previdência complementar fechada",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Previdência complementar aberta",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Planos de saúde",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Loteamento de imóveis próprios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Agente de propriedade industrial",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Cartórios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Criação de estandes para feiras e exposições",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Outras atividades de publicidade não especificadas anteriormente",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Escafandria e mergulho",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Gestão de ativos intangíveis não-financeiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Seleção e agenciamento de mão-de-obra",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Locação de mão-de-obra temporária",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Fornecimento e gestão de recursos humanos para terceiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de vigilância e segurança privada",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de transporte de valores",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Outras atividades de serviços de segurança",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Condomínios prediais (NÃO RESIDENCIAL)",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Limpeza em prédios e em domicílios",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Imunização e controle de pragas urbanas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de limpeza não especificadas anteriormente",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades paisagísticas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Medição de consumo de energia elétrica, gás e água",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Emissão de vales-alimentação, vales-transportes e similares",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Leiloeiros independentes",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Serviços de levantamento de fundos sob contrato",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Administração pública em geral",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Regulação das atividades econômicas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Relações exteriores",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Seguridade social obrigatória",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de sonorização e de iluminação",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de organizações associativas patronais e empresariais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de fiscalização profissional",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Outras atividades associativas profissionais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de organizações sindicais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades de organizações políticas",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Atividades associativas não especificadas anteriormente",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Organismos internacionais e outras instituições extraterritoriais",
+"grupo": "Serviços profissionais",
+"divisao": "D-1",
+"carga": 700
+},
+{
+"descricao": "Banco Central",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos comerciais",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos múltiplos, com carteira comercial",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Caixas econômicas",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos cooperativos",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Cooperativas centrais de crédito",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Cooperativas de crédito mútuo",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Cooperativas de crédito rural",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos múltiplos, sem carteira comercial",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos de investimento",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos de desenvolvimento",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Agências de fomento",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de crédito imobiliário",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Associações de poupança e empréstimo",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Companhias hipotecárias",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de crédito, financiamento e investimento - financeiras",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de crédito ao microempreendedor",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bancos de câmbio",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Arrendamento mercantil",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de capitalização",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Holdings de instituições financeiras",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Holdings de instituições não-financeiras",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Outras sociedades de participação, exceto holdings",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Fundos de investimento, exceto previdenciários e imobiliários",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Fundos de investimento previdenciários",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Fundos de investimento imobiliários",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de fomento mercantil – “factoring”",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Securitização de créditos",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Administração de consórcios para aquisição de bens e direitos",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Clubes de investimento",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Sociedades de investimento",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Fundo garantidor de crédito",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Caixas de financiamento de corporações",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Concessão de crédito pelas OSCIP",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bolsa de valores",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bolsa de mercadorias",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Bolsa de mercadorias e futuros",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Administração de mercados de balcão organizados",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Corretoras de títulos e valores mobiliários",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Distribuidoras de títulos e valores mobiliários",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Corretoras de câmbio",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Corretoras de contratos de mercadorias",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Agentes de investimentos em aplicações financeiras",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Administração de cartões de crédito",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Serviços de liquidação e custódia",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Correspondentes de instituições financeiras",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Representações de bancos estrangeiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Caixas eletrônicos",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Operadoras de cartões de débito",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Atividades de administração de fundos por contrato ou comissão",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Casas lotéricas",
+"grupo": "Serviços profissionais",
+"divisao": "D-2",
+"carga": 700
+},
+{
+"descricao": "Manutenção e reparação de equipamentos e instrumentos ópticos",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Manutenção e reparação de máquinas motrizes não-elétricas",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Manutenção e reparação de válvulas industriais",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Manutenção e reparação de compressores",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Manutenção e reparação de máquinas-ferramenta",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Instalação de máquinas e equipamentos industriais",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 600
+},
+{
+"descricao": "Serviços de montagem de móveis de qualquer material",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Serviços de pintura de edifícios em geral",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 500
+},
+{
+"descricao": "Reparação e manutenção de equipamentos de comunicação",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Reparação de calçados, de bolsas e artigos de viagem",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 600
+},
+{
+"descricao": "Chaveiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 200
+},
+{
+"descricao": "Reparação de relógios",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Reparação de artigos do mobiliário",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 500
+},
+{
+"descricao": "Reparação de joias",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Lavanderias",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Tinturarias",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Toalheiros",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 300
+},
+{
+"descricao": "Administração de infraestrutura portuária",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 700
+},
+{
+"descricao": "Atividades do operador portuário",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 700
+},
+{
+"descricao": "Gestão de terminais aquaviários",
+"grupo": "Serviços profissionais",
+"divisao": "D-3",
+"carga": 700
+},
+{
+"descricao": "Testes e análises técnicas",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Laboratórios fotográficos",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Laboratórios de anatomia patológica e citológica",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Laboratórios clínicos",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de diálise e nefrologia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de tomografia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de ressonância magnética",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de quimioterapia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de radioterapia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de hemoterapia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de litotripsia",
+"grupo": "Serviços profissionais",
+"divisao": "D-4",
+"carga": 300
+},
+{
+"descricao": "Ensino fundamental",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Ensino médio",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Educação superior - graduação",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Educação superior - graduação e pós-graduação",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Educação superior - pós-graduação e extensão",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Administração de caixas escolares",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Atividades de apoio à educação, exceto caixas escolares",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Cursos preparatórios para concursos",
+"grupo": "Educacional e cultura física",
+"divisao": "E-1",
+"carga": 300
+},
+{
+"descricao": "Ensino de artes cênicas, exceto dança",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Ensino de música",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Ensino de arte e cultura não especificado anteriormente",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Ensino de idiomas",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Formação de condutores",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Cursos de pilotagem",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Treinamento em informática",
+"grupo": "Educacional e cultura física",
+"divisao": "E-2",
+"carga": 300
+},
+{
+"descricao": "Atividades de sauna e banhos",
+"grupo": "Educacional e cultura física",
+"divisao": "E-3",
+"carga": 300
+},
+{
+"descricao": "Ensino de esportes",
+"grupo": "Educacional e cultura física",
+"divisao": "E-3",
+"carga": 300
+},
+{
+"descricao": "Ensino de dança",
+"grupo": "Educacional e cultura física",
+"divisao": "E-3",
+"carga": 300
+},
+{
+"descricao": "Atividades de condicionamento físico",
+"grupo": "Educacional e cultura física",
+"divisao": "E-3",
+"carga": 300
+},
+{
+"descricao": "Educação profissional de nível técnico",
+"grupo": "Educacional e cultura física",
+"divisao": "E-4",
+"carga": 300
+},
+{
+"descricao": "Educação profissional de nível tecnológico",
+"grupo": "Educacional e cultura física",
+"divisao": "E-4",
+"carga": 300
+},
+{
+"descricao": "Treinamento em desenvolvimento profissional e gerencial",
+"grupo": "Educacional e cultura física",
+"divisao": "E-4",
+"carga": 300
+},
+{
+"descricao": "Educação infantil - creche",
+"grupo": "Educacional e cultura física",
+"divisao": "E-5",
+"carga": 300
+},
+{
+"descricao": "Educação infantil - Pré-escola",
+"grupo": "Educacional e cultura física",
+"divisao": "E-5",
+"carga": 300
+},
+{
+"descricao": "Outras atividades de ensino não especificadas anteriormente",
+"grupo": "Educacional e cultura física",
+"divisao": "E-6",
+"carga": 300
+},
+{
+"descricao": "Atividades de bibliotecas e arquivos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-1",
+"carga": 2000
+},
+{
+"descricao": "Atividades de organizações religiosas ou filosóficas",
+"grupo": "Locais de reunião de público",
+"divisao": "F-2",
+"carga": 200
+},
+{
+"descricao": "Gestão de instalações de esportes",
+"grupo": "Locais de reunião de público",
+"divisao": "F-3",
+"carga": 150
+},
+{
+"descricao": "Produção e promoção de eventos esportivos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-3",
+"carga": 150
+},
+{
+"descricao": "Outras atividades esportivas não especificadas anteriormente",
+"grupo": "Locais de reunião de público",
+"divisao": "F-3",
+"carga": 150
+},
+{
+"descricao": "Terminais rodoviários e ferroviários",
+"grupo": "Locais de reunião de público",
+"divisao": "F-4",
+"carga": 200
+},
+{
+"descricao": "Atividades de exibição cinematográfica",
+"grupo": "Locais de reunião de público",
+"divisao": "F-5",
+"carga": 600
+},
+{
+"descricao": "Produção teatral",
+"grupo": "Locais de reunião de público",
+"divisao": "F-5",
+"carga": 600
+},
+{
+"descricao": "Produção musical",
+"grupo": "Locais de reunião de público",
+"divisao": "F-5",
+"carga": 600
+},
+{
+"descricao": "Produção de espetáculos de dança",
+"grupo": "Locais de reunião de público",
+"divisao": "F-5",
+"carga": 600
+},
+{
+"descricao": "Locais de reunião de",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Discotecas, danceterias, salões de dança e similares",
+"grupo": "Locais de reunião de público",
+"divisao": "F-11",
+"carga": 600
+},
+{
+"descricao": "Produção de espetáculos circenses, de marionetes e similares³",
+"grupo": "Locais de reunião de público",
+"divisao": "F-7",
+"carga": 500
+},
+{
+"descricao": "Produção de espetáculos de rodeios, vaquejadas e similares ³",
+"grupo": "Locais de reunião de público",
+"divisao": "F-7",
+"carga": 500
+},
+{
+"descricao": "Eventos Temporários ³",
+"grupo": "Locais de reunião de público",
+"divisao": "F-7",
+"carga": 500
+},
+{
+"descricao": "Padaria e confeitaria com predominância de revenda",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Restaurantes e similares",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Lanchonetes, casas de chá, de sucos e similares",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Serviços ambulantes de alimentação",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Serviços de alimentação para eventos e recepções - bufê",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Cantinas - serviços de alimentação privativos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-8",
+"carga": 300
+},
+{
+"descricao": "Parques de diversão e parques temáticos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-9",
+"carga": 500
+},
+{
+"descricao": "Casas de festas e eventos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Clubes sociais, esportivos e similares",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Exploração de boliches",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Exploração de jogos de sinuca, bilhar e similares",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Exploração de jogos eletrônicos recreativos",
+"grupo": "Locais de reunião de público",
+"divisao": "F-6",
+"carga": 600
+},
+{
+"descricao": "Comércio varejista de combustíveis para veículos automotores",
+"grupo": "Serviços automotivos",
+"divisao": "G-3",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de tratores agrícolas",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de tratores, exceto agrícolas",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de veículos ferroviários",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção de aeronaves na pista",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de embarcações e estruturas flutuantes",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de embarcações para esporte e lazer",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Serviços de borracharia para veículos automotores",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Serviço de capotaria",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Manutenção e reparação de motocicletas e motonetas",
+"grupo": "Serviços automotivos",
+"divisao": "G-4",
+"carga": 300
+},
+{
+"descricao": "Atividades veterinárias",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-1",
+"carga": 300
+},
+{
+"descricao": "Clínicas e residências geriátricas",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Instituições de longa permanência para idosos",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Centros de apoio a pacientes com câncer e com AIDS",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Condomínios residenciais para idosos",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Atividades de centros de assistência psicossocial",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "distúrbios psíquicos, deficiência mental e dependência química e",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Orfanatos",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Albergues assistenciais",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Serviços de assistência social sem alojamento",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-2",
+"carga": 300
+},
+{
+"descricao": "Defesa",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-4",
+"carga": 450
+},
+{
+"descricao": "Segurança e ordem pública",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-4",
+"carga": 450
+},
+{
+"descricao": "Defesa civil",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-4",
+"carga": 450
+},
+{
+"descricao": "Justiça",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-4",
+"carga": 450
+},
+{
+"descricao": "Atividade médica ambulatorial restrita a consultas",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividade odontológica",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Serviços de vacinação e imunização humana",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de reprodução humana assistida",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de enfermagem",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de profissionais da nutrição",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de psicologia e psicanálise",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de fisioterapia",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de terapia ocupacional",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de fonoaudiologia",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de terapia de nutrição enteral e parenteral",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de apoio à gestão de saúde",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de banco de leite humano",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de acupuntura",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Atividades de podologia",
+"grupo": "Serviços de saúde e institucionais",
+"divisao": "H-6",
+"carga": 250
+},
+{
+"descricao": "Abate de aves",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Abate de pequenos animais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Captação, tratamento e distribuição de água",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de conservas de frutas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de conservas de palmito",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Olarias",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 100
+},
+{
+"descricao": "Fabricação de sucos concentrados de frutas, hortaliças e legumes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Preparação do leite",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de laticínios",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de sorvetes e outros gelados comestíveis",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de especiarias, molhos, temperos e condimentos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de vinagres",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de gelo comum",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de vinho",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de malte, inclusive malte uísque",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de cervejas e chopes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de águas envasadas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de refrigerantes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de chá mate e outros chás prontos para consumo",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de bebidas isotônicas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Processamento industrial do fumo",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de cigarros",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de cigarrilhas e charutos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de filtros para cigarros",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fiação de fibras artificiais e sintéticas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fiação elétrica",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Tecelagem de fios de fibras artificiais e sintéticas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de intermediários para fertilizantes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de adubos e fertilizantes organominerais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de adubos e fertilizantes exceto organominerais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de defensivos agrícolas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de sabões e detergentes sintéticos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de tintas a base de água",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de produtos farmoquímicos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de medicamentos alopáticos para uso humano",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de medicamentos homeopáticos para uso humano",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de medicamentos fitoterápicos para uso humano",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de medicamentos para uso veterinário",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de preparações farmacêuticas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de vidro plano e de segurança",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de fermentos e leveduras",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de embalagens de vidro",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de artigos de vidro",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de cimento",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de artefatos de cimento para uso na construção",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de artefatos de fibrocimento para uso na construção",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de casas pré-moldadas de concreto",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Preparação de massa de concreto e argamassa para construção",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de produtos cerâmicos refratários",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de azulejos e pisos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de material sanitário de cerâmica",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Britamento de pedras, exceto associado à extração",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de cal e gesso",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Fabricação de abrasivos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de ferro-gusa",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de ferroligas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de semiacabados de aço",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de laminados planos de aços especiais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de tubos de aço sem costura",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de laminados longos de aço, exceto tubos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de arames de aço",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de tubos de aço com costura",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de outros tubos de ferro e aço",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de alumínio e suas ligas em formas primárias",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de laminados de alumínio",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Metalurgia dos metais preciosos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Metalurgia do cobre",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de zinco em formas primárias",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de laminados de zinco",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de ânodos para galvanoplastia",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fundição de ferro e aço",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fundição de metais não-ferrosos e suas ligas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de estruturas metálicas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de esquadrias de metal",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de obras de caldeiraria pesada",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de forjados de aço",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Produção de forjados de metais não-ferrosos e suas ligas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de bovinos para corte",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de bovinos para leite",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de bovinos, exceto para corte e leite",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de bufalinos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de equinos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de asininos e muares",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de caprinos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de ovinos, inclusive para produção de lã",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de suínos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de frangos para corte",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Produção de pintos de um dia",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de outros galináceos, exceto para corte",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de aves, exceto galináceos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Produção de ovos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Apicultura",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de animais de estimação",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de escargot",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de bicho-da-seda",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Criação de outros animais não especificados anteriormente",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Serviço de inseminação artificial em animais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Serviço de tosqueamento de ovinos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Serviço de manejo de animais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Atividades de apoio à pecuária não especificadas anteriormente",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 80
+},
+{
+"descricao": "Produção de artefatos estampados de metal",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Metalurgia do pó",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Serviços de usinagem, tornearia e solda",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Serviços de tratamento e revestimento em metais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de artigos de cutelaria",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de artigos de serralheria, exceto esquadrias",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de ferramentas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de embalagens metálicas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de produtos de trefilados de metal padronizados",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de artigos de metal para uso doméstico e pessoal",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Serviços de confecção de armações metálicas para a construção",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Serviços de corte e dobra de metais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de componentes eletrônicos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de equipamentos de informática",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de periféricos para equipamentos de informática",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de cronômetros e relógios",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de motores elétricos, peças e acessórios",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de fios, cabos e condutores elétricos isolados",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de lâmpadas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de luminárias e outros equipamentos de iluminação",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 40
+},
+{
+"descricao": "Fabricação de equipamentos para sinalização e alarme",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de rolamentos para fins industriais",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de tratores agrícolas, peças e acessórios",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de máquinas-ferramenta, peças e acessórios",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "extração mineral, peças e acessórios, exceto na extração de",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de tratores, peças e acessórios, exceto agrícolas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Industrial²",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de automóveis, camionetas e utilitários",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de motores para automóveis, camionetas e utilitários",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de caminhões e ônibus",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de motores para caminhões e ônibus",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de cabines, carrocerias e reboques para caminhões",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de carrocerias para ônibus",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de locomotivas, vagões e outros materiais rodantes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de peças e acessórios para veículos ferroviários",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de veículos militares de combate",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de motocicletas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de peças e acessórios para motocicletas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Lapidação de gemas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de artefatos de joalheria e ourivesaria",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Cunhagem de moedas e medalhas",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de bijuterias e artefatos semelhantes",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de jogos eletrônicos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 400
+},
+{
+"descricao": "Fabricação de materiais para medicina e odontologia",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Serviços de prótese dentária",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Fabricação de artigos ópticos",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Serviço de laboratório óptico",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Fabricação de guarda-chuvas e similares",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Produção e distribuição de vapor, água quente e ar-condicionado",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Produção de filmes para publicidade",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 300
+},
+{
+"descricao": "Recuperação de sucatas de alumínio",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Recuperação de materiais metálicos, exceto alumínio",
+"grupo": "Industrial",
+"divisao": "I-1",
+"carga": 200
+},
+{
+"descricao": "Construção de embarcações de grande porte",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Construção de embarcações para esporte e lazer",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Comércio varejista de doces, balas, bombons e semelhantes",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Caixotes barris ou pallets de madeira",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de fibras artificiais e sintéticas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de produtos de carne",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Preparação de subprodutos do abate",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Preservação de peixes, crustáceos e moluscos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fornos de secagem com grade de madeira",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de conservas de peixes, crustáceos e moluscos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de óleos vegetais em bruto, exceto óleo de milho",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de óleos vegetais refinados, exceto óleo de milho",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de óleo de milho em bruto",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de óleo de milho refinado",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de açúcar em bruto",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de açúcar de cana refinado",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Beneficiamento de café",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Torrefação e moagem de café",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Fabricação de tecidos de malha",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de produtos à base de café",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Fabricação de produtos de panificação industrial",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de biscoitos e bolachas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Fabricação de produtos derivados do cacau e de chocolates",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Fabricação de frutas cristalizadas, balas e semelhantes",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Fabricação de massas alimentícias",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de alimentos e pratos prontos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de pós alimentícios",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de produtos para infusão (chá, mate etc.)",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de adoçantes naturais e artificiais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de alimentos dietéticos e complementos alimentares",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de aguardente de cana-de-açúcar",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de outras aguardentes e bebidas destiladas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Preparação e fiação de fibras de algodão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Preparação e fiação de fibras têxteis naturais, exceto algodão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de linhas para costurar e bordar",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Tecelagem de fios de algodão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Tecelagem de fios de fibras têxteis naturais, exceto algodão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de artefatos têxteis para uso doméstico",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de artefatos de tapeçaria",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de artefatos de cordoaria",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de tecidos especiais, inclusive artefatos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Confecção de roupas íntimas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Facção de roupas íntimas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Facção de peças do vestuário, exceto roupas íntimas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Confecção de roupas profissionais, exceto sob medida",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Confecção, sob medida, de roupas profissionais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Facção de roupas profissionais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de meias",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Curtimento e outras preparações de couro",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de artefatos de couro não especificados anteriormente",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de calçados de couro",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Acabamento de calçados de couro sob contrato",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de tênis de qualquer material",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de calçados de material sintético",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de partes para calçados, de qualquer material",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Serrarias com desdobramento de madeira em bruto",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Serviço de tratamento de madeira realizado sob contrato",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de casas de madeira pré-fabricadas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de outros artigos de carpintaria para construção",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de artefatos de tanoaria e de embalagens de madeira",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de artefatos diversos de madeira, exceto móveis",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de papel",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de cartolina e papel-cartão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de embalagens de papel",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de embalagens de cartolina e papel-cartão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de chapas e de embalagens de papelão ondulado",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de formulários contínuos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de fraldas descartáveis",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de absorventes higiênicos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Impressão de jornais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Impressão de livros, revistas e outras publicações periódicas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Impressão de material de segurança",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Impressão de material para uso publicitário",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Impressão de material para outros usos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Serviços de pré-impressão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Serviços de encadernação e plastificação",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Reprodução de som em qualquer suporte",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Reprodução de vídeo em qualquer suporte",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Reprodução de software em qualquer suporte",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de gases industriais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de desinfetantes domissanitários",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de adesivos e selantes",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de aditivos de uso industrial",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de catalisadores",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 500
+},
+{
+"descricao": "Fabricação de pneumáticos e de câmaras-de-ar",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Reforma de pneumáticos usados",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de laminados planos e tubulares de material plástico",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de embalagens de material plástico",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de artefatos de material plástico para usos industriais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de mídias virgens, magnéticas e ópticas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de bancos e estofados para veículos automotores",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de aeronaves",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de móveis com predominância de madeira",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de móveis com predominância de metal",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de colchões",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 3000
+},
+{
+"descricao": "Fabricação de instrumentos musicais, peças e acessórios",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de artefatos para pesca e esporte",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de escovas, pincéis e vassouras",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de canetas, lápis e outros artigos para escritório",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de painéis e letreiros luminosos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Fabricação de aviamentos para costura",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 700
+},
+{
+"descricao": "Fabricação de produtos diversos não especificados anteriormente",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 600
+},
+{
+"descricao": "Edição de livros",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição de revistas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição de cadastros, listas e outros produtos gráficos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição integrada à impressão de livros",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição integrada à impressão de jornais diários",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição integrada à impressão de jornais não diários",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Edição integrada à impressão de revistas",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 400
+},
+{
+"descricao": "Envasamento e empacotamento sob contrato",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Fabricação de alimentos para animais",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1100
+},
+{
+"descricao": "Fabricação de tintas à base de látex",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de tintas de impressão",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Recuperação de materiais plásticos",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 1000
+},
+{
+"descricao": "Usinas de compostagem",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 450
+},
+{
+"descricao": "Recuperação de materiais não especificados anteriormente",
+"grupo": "Industrial",
+"divisao": "I-2",
+"carga": 800
+},
+{
+"descricao": "Fabricação de velas, inclusive decorativa",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 1300
+},
+{
+"descricao": "Fabricação de açúcar de cereais (dextrose) e de beterraba",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 1700
+},
+{
+"descricao": "Frigorífico - abate de bovinos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Frigorífico - abate de equinos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Frigorífico - abate de ovinos e caprinos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Frigorífico - abate de bufalinos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Frigorífico - abate de suínos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Beneficiamento de arroz",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 1700
+},
+{
+"descricao": "Fabricação de produtos do arroz",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 1700
+},
+{
+"descricao": "Moagem de trigo e fabricação de derivados",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Fabricação de farinha de mandioca e derivados",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Fabricação de farinha de milho e derivados, exceto óleos de milho",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Fabricação de amidos e féculas de vegetais",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Coquerias",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de cloro e álcalis",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Espumas em geral",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 3000
+},
+{
+"descricao": "Elaboração de combustíveis nucleares",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de produtos petroquímicos básicos",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de intermediários para plastificantes, resinas e fibras",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 3000
+},
+{
+"descricao": "Fabricação de resinas termoplásticas",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 3000
+},
+{
+"descricao": "Fabricação de resinas termofixas",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 3000
+},
+{
+"descricao": "Fabricação de elastômeros",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 3000
+},
+{
+"descricao": "Fabricação de produtos de limpeza e polimento",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Fabricação de tintas, vernizes, esmaltes e lacas*",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 2000
+},
+{
+"descricao": "Fabricação de impermeabilizantes, solventes e produtos afins",
+"grupo": "Industrial",
+"divisao": "I-3",
+"carga": 4000
+},
+{
+"descricao": "Comércio varejista de fogos de artifício e artigos pirotécnicos",
+"grupo": "Explosivos",
+"divisao": "L-1",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de pólvoras, explosivos e detonantes",
+"grupo": "Explosivos",
+"divisao": "L-2",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de artigos pirotécnicos",
+"grupo": "Explosivos",
+"divisao": "L-2",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de fósforos de segurança",
+"grupo": "Explosivos",
+"divisao": "L-2",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de armas de fogo, outras armas e munições",
+"grupo": "Explosivos",
+"divisao": "L-2",
+"carga": 4000
+},
+{
+"descricao": "Túnel",
+"grupo": "Especial",
+"divisao": "M-1",
+"carga": 500
+},
+{
+"descricao": "Produção de gás; processamento de gás natural",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Distribuição de combustíveis gasosos por redes urbanas",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "demais derivados de petróleo, exceto lubrificantes, não realizado",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 2100
+},
+{
+"descricao": "Comércio atacadista de combustíveis de origem mineral em bruto",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 2100
+},
+{
+"descricao": "Comércio atacadista de lubrificantes",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 2100
+},
+{
+"descricao": "Comércio atacadista de gás liquefeito de petróleo (GLP)",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 2100
+},
+{
+"descricao": "Comércio varejista de gás liquefeito de petróleo (GLP)",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 2100
+},
+{
+"descricao": "Fabricação de produtos do refino de petróleo",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Formulação de combustíveis",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Rerrefino de óleos lubrificantes",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de álcool",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Fabricação de biocombustíveis, exceto álcool",
+"grupo": "Especial",
+"divisao": "M-2",
+"carga": 4000
+},
+{
+"descricao": "Geração de energia elétrica",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 600
+},
+{
+"descricao": "Transmissão de energia elétrica",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 200
+},
+{
+"descricao": "Comércio atacadista de energia elétrica",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 200
+},
+{
+"descricao": "Distribuição de energia elétrica",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 200
+},
+{
+"descricao": "Manutenção de redes de distribuição de energia elétrica",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 600
+},
+{
+"descricao": "Manutenção de estações e redes de telecomunicações",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 200
+},
+{
+"descricao": "Serviços de telefonia fixa comutada - STFC",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Serviços de redes de transportes de telecomunicações - SRTT",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Serviços de comunicação multimídia - SCM",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Serviço móvel especializado - SME",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Provedores de acesso às redes de comunicações",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Provedores de voz sobre protocolo internet - VOIP",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Telefonia móvel celular",
+"grupo": "Especial",
+"divisao": "M-3",
+"carga": 100
+},
+{
+"descricao": "Construção de edifícios",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Construção de rodovias e ferrovias",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Pintura para sinalização em pistas rodoviárias e aeroportos",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 500
+},
+{
+"descricao": "Construção de obras de arte especiais",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Obras de urbanização - ruas, praças e calçadas",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 400
+},
+{
+"descricao": "Construção de estações e redes de telecomunicações",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Obras de irrigação",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Obras portuárias, marítimas e fluviais",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Montagem de estruturas metálicas",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 200
+},
+{
+"descricao": "Obras de montagem industrial",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 200
+},
+{
+"descricao": "Construção de instalações esportivas e recreativas",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Outras obras de engenharia civil não especificadas anteriormente",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Demolição de edifícios e outras estruturas",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Preparação de canteiro e limpeza de terreno",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Perfurações e sondagens",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Obras de terraplenagem",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Instalação e manutenção elétrica",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 600
+},
+{
+"descricao": "Instalações hidráulicas, sanitárias e de gás",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 700
+},
+{
+"descricao": "Instalações de sistema de prevenção contra incêndio",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 40
+},
+{
+"descricao": "Instalação de painéis publicitários",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 600
+},
+{
+"descricao": "Tratamentos térmicos, acústicos ou de vibração",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 200
+},
+{
+"descricao": "Impermeabilização em obras de engenharia civil",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 3000
+},
+{
+"descricao": "Obras de acabamento em gesso e estuque",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 80
+},
+{
+"descricao": "Outras obras de acabamento da construção",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 500
+},
+{
+"descricao": "Obras de fundações",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Obras de alvenaria",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 40
+},
+{
+"descricao": "Perfuração e construção de poços de água",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Restauração e conservação de lugares e prédios históricos",
+"grupo": "Especial",
+"divisao": "M-4",
+"carga": 300
+},
+{
+"descricao": "Silos",
+"grupo": "Especial",
+"divisao": "M-5",
+"carga": 1000
+},
+{
+"descricao": "Pátio de containers",
+"grupo": "Especial",
+"divisao": "M-7",
+"carga": 400
+}
+]

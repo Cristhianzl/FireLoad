@@ -1,0 +1,450 @@
+[
+ {
+  "name": "Acetileno",
+  "hi": 50.0
+ },
+ {
+  "name": "Dietilcetona",
+  "hi": 34.0
+ },
+ {
+  "name": "Metanol",
+  "hi": 19.0
+ },
+ {
+  "name": "Acetileno dissolvido",
+  "hi": 17.0
+ },
+ {
+  "name": "Dietileter",
+  "hi": 37.0
+ },
+ {
+  "name": "Monóxido de carbono",
+  "hi": 10.0
+ },
+ {
+  "name": "Acetona",
+  "hi": 30.0
+ },
+ {
+  "name": "Epóxi",
+  "hi": 34.0
+ },
+ {
+  "name": "Nafta",
+  "hi": 42.0
+ },
+ {
+  "name": "Acrílico",
+  "hi": 28.0
+ },
+ {
+  "name": "Etano",
+  "hi": 47.0
+ },
+ {
+  "name": "N-Butano",
+  "hi": 45.0
+ },
+ {
+  "name": "Açúcar",
+  "hi": 17.0
+ },
+ {
+  "name": "Etanol",
+  "hi": 26.0
+ },
+ {
+  "name": "Nitrocelulose",
+  "hi": 8.4
+ },
+ {
+  "name": "Amido",
+  "hi": 17.0
+ },
+ {
+  "name": "Eteno",
+  "hi": 50.0
+ },
+ {
+  "name": "N-Octano",
+  "hi": 44.0
+ },
+ {
+  "name": "Algodão",
+  "hi": 18.0
+ },
+ {
+  "name": "Éter amílico",
+  "hi": 42.0
+ },
+ {
+  "name": "N-Pentano",
+  "hi": 45.0
+ },
+ {
+  "name": "Álcool alílico",
+  "hi": 34.0
+ },
+ {
+  "name": "Éter etílico",
+  "hi": 34.0
+ },
+ {
+  "name": "Óleo de linhaça",
+  "hi": 37.0
+ },
+ {
+  "name": "Álcool amílico",
+  "hi": 42.0
+ },
+ {
+  "name": "Etileno",
+  "hi": 50.0
+ },
+ {
+  "name": "Óleo vegetal",
+  "hi": 42.0
+ },
+ {
+  "name": "Álcool etílico",
+  "hi": 25.0
+ },
+ {
+  "name": "Etino",
+  "hi": 48.0
+ },
+ {
+  "name": "Palha",
+  "hi": 16.0
+ },
+ {
+  "name": "Álcool metílico",
+  "hi": 21.0
+ },
+ {
+  "name": "Enxofre",
+  "hi": 8.4
+ },
+ {
+  "name": "Papel",
+  "hi": 17.0
+ },
+ {
+  "name": "Benzeno",
+  "hi": 40.0
+ },
+ {
+  "name": "Farinha de trigo",
+  "hi": 17.0
+ },
+ {
+  "name": "Parafina",
+  "hi": 46.0
+ },
+ {
+  "name": "Benzina",
+  "hi": 42.0
+ },
+ {
+  "name": "Heptano",
+  "hi": 46.0
+ },
+ {
+  "name": "Petróleo",
+  "hi": 41.0
+ },
+ {
+  "name": "Celulose",
+  "hi": 16.0
+ },
+ {
+  "name": "Fenol",
+  "hi": 34.0
+ },
+ {
+  "name": "Plástico",
+  "hi": 31.0
+ },
+ {
+  "name": "Biodiesel",
+  "hi": 39.0
+ },
+ {
+  "name": "Fibra sintética (nylon 6,6)",
+  "hi": 29.0
+ },
+ {
+  "name": "Poliacrilonitrico",
+  "hi": 30.0
+ },
+ {
+  "name": "Borracha espuma",
+  "hi": 37.0
+ },
+ {
+  "name": "Fósforo",
+  "hi": 25.0
+ },
+ {
+  "name": "Policarbonato",
+  "hi": 29.0
+ },
+ {
+  "name": "Borracha em tiras",
+  "hi": 32.0
+ },
+ {
+  "name": "Gás natural",
+  "hi": 26.0
+ },
+ {
+  "name": "Poliéster",
+  "hi": 27.0
+ },
+ {
+  "name": "Butano",
+  "hi": 46.0
+ },
+ {
+  "name": "Gasolina",
+  "hi": 47.0
+ },
+ {
+  "name": "Poliestireno",
+  "hi": 39.0
+ },
+ {
+  "name": "Cacau em pó",
+  "hi": 17.0
+ },
+ {
+  "name": "Glicerina",
+  "hi": 17.0
+ },
+ {
+  "name": "Polietileno",
+  "hi": 44.0
+ },
+ {
+  "name": "Café",
+  "hi": 17.0
+ },
+ {
+  "name": "Gordura e óleo vegetal",
+  "hi": 42.0
+ },
+ {
+  "name": "Polimetilmetacrilico",
+  "hi": 24.0
+ },
+ {
+  "name": "Cafeína",
+  "hi": 21.0
+ },
+ {
+  "name": "Grãos",
+  "hi": 17.0
+ },
+ {
+  "name": "Polioximetileno",
+  "hi": 15.0
+ },
+ {
+  "name": "Cálcio",
+  "hi": 4.0
+ },
+ {
+  "name": "Graxa, lubrificante",
+  "hi": 41.0
+ },
+ {
+  "name": "Poliuretano",
+  "hi": 23.0
+ },
+ {
+  "name": "Carbono",
+  "hi": 34.0
+ },
+ {
+  "name": "Polivinilclorido",
+  "hi": 16.0
+ },
+ {
+  "name": "Carvão",
+  "hi": 36.0
+ },
+ {
+  "name": "Hexametileno",
+  "hi": 46.0
+ },
+ {
+  "name": "Polipropileno",
+  "hi": 43.0
+ },
+ {
+  "name": "Hexano",
+  "hi": 46.0
+ },
+ {
+  "name": "Propano",
+  "hi": 46.0
+ },
+ {
+  "name": "Cereais",
+  "hi": 17.0
+ },
+ {
+  "name": "Hidreto de sódio",
+  "hi": 9.0
+ },
+ {
+  "name": "PVC",
+  "hi": 17.0
+ },
+ {
+  "name": "C-Heptano",
+  "hi": 46.0
+ },
+ {
+  "name": "Hidrogênio",
+  "hi": 143.0
+ },
+ {
+  "name": "Resina de fenol",
+  "hi": 25.0
+ },
+ {
+  "name": "C-Pentano",
+  "hi": 46.0
+ },
+ {
+  "name": "Hidreto de magnésio",
+  "hi": 17.0
+ },
+ {
+  "name": "Resina de uréia",
+  "hi": 21.0
+ },
+ {
+  "name": "C-Propano",
+  "hi": 50.0
+ },
+ {
+  "name": "Látex",
+  "hi": 44.0
+ },
+ {
+  "name": "Resina melamínica",
+  "hi": 18.0
+ },
+ {
+  "name": "C-Hexano",
+  "hi": 46.0
+ },
+ {
+  "name": "Lã",
+  "hi": 23.0
+ },
+ {
+  "name": "Seda",
+  "hi": 19.0
+ },
+ {
+  "name": "Chocolate",
+  "hi": 25.0
+ },
+ {
+  "name": "Leite em pó",
+  "hi": 17.0
+ },
+ {
+  "name": "Sisal",
+  "hi": 17.0
+ },
+ {
+  "name": "Chá",
+  "hi": 17.0
+ },
+ {
+  "name": "Linho",
+  "hi": 17.0
+ },
+ {
+  "name": "Sódio",
+  "hi": 4.5
+ },
+ {
+  "name": "Cloreto de polivinil",
+  "hi": 21.0
+ },
+ {
+  "name": "Linóleo",
+  "hi": 2.0
+ },
+ {
+  "name": "Sulfureto de carbono",
+  "hi": 12.5
+ },
+ {
+  "name": "Couro",
+  "hi": 19.0
+ },
+ {
+  "name": "Lixo de cozinha",
+  "hi": 18.0
+ },
+ {
+  "name": "Tabaco",
+  "hi": 17.0
+ },
+ {
+  "name": "Creosoto",
+  "hi": 37.0
+ },
+ {
+  "name": "Madeira",
+  "hi": 19.0
+ },
+ {
+  "name": "Tolueno",
+  "hi": 42.0
+ },
+ {
+  "name": "D-glucose",
+  "hi": 15.0
+ },
+ {
+  "name": "Magnésio",
+  "hi": 25.0
+ },
+ {
+  "name": "Turfa",
+  "hi": 34.0
+ },
+ {
+  "name": "Diesel",
+  "hi": 43.0
+ },
+ {
+  "name": "Manteiga",
+  "hi": 37.0
+ },
+ {
+  "name": "Dietilamina",
+  "hi": 42.0
+ },
+ {
+  "name": "Metano",
+  "hi": 50.0
+ },
+ {
+  "name": "Viscose",
+  "hi": 17.0
+ },
+ {
+  "name": "Ureia",
+  "hi": 9
+ }
+]

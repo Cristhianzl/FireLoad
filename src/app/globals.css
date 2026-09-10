@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes:
+    extinfire --default,
+    extinfire-dark --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "extinfire";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #ffffff;
+  --color-base-200: #f4f5f7;
+  --color-base-300: #e4e7ec;
+  --color-base-content: #16181d;
+  --color-primary: #0f766e;
+  --color-primary-content: #f4fdfb;
+  --color-secondary: #334155;
+  --color-secondary-content: #f8fafc;
+  --color-accent: #0e7490;
+  --color-accent-content: #f0fbff;
+  --color-neutral: #1f242e;
+  --color-neutral-content: #f7f8f9;
+  --color-info: #0e7490;
+  --color-info-content: #f0fbff;
+  --color-success: #15803d;
+  --color-success-content: #f2fbf5;
+  --color-warning: #b45309;
+  --color-warning-content: #fff9f0;
+  --color-error: #b23a2e;
+  --color-error-content: #fff6f4;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "extinfire-dark";
+  color-scheme: dark;
+  --color-base-100: #14171d;
+  --color-base-200: #1b1f27;
+  --color-base-300: #262b35;
+  --color-base-content: #e7e9ee;
+  --color-primary: #2dd4bf;
+  --color-primary-content: #05201c;
+  --color-secondary: #94a3b8;
+  --color-secondary-content: #0b1220;
+  --color-accent: #38bdf8;
+  --color-accent-content: #04222e;
+  --color-neutral: #e7e9ee;
+  --color-neutral-content: #14171d;
+  --color-info: #38bdf8;
+  --color-info-content: #04222e;
+  --color-success: #4ade80;
+  --color-success-content: #052e16;
+  --color-warning: #fbbf24;
+  --color-warning-content: #271900;
+  --color-error: #f87171;
+  --color-error-content: #2b0a06;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.readout-value {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.section-y {
+  padding-block: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-y {
+    padding-block: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
