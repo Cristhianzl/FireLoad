@@ -1,6 +1,6 @@
 import { ReferenceList } from "@/components/ReferenceChip";
-import { formatNumber } from "@/lib/format";
 import type { ClassEstimate, ExtinguisherEstimate } from "@/lib/engine";
+import { formatNumber } from "@/lib/format";
 import { OBSTACLE_ORDER } from "@/lib/norms/tables";
 import { fireClass, obstacle, results } from "@/locales/pt-BR";
 
@@ -9,7 +9,7 @@ function ClassCard({ estimate }: { estimate: ClassEstimate }) {
   return (
     <div className="rounded-box border-base-300 bg-base-100 border p-5">
       <div className="flex items-start justify-between gap-3">
-        <div>
+        <div className="min-w-0">
           <h4 className="font-display text-lg font-semibold">
             {isA ? fireClass.a : fireClass.b}
           </h4>
@@ -17,7 +17,7 @@ function ClassCard({ estimate }: { estimate: ClassEstimate }) {
             {isA ? fireClass.aHelp : fireClass.bHelp}
           </p>
         </div>
-        <div className="text-right">
+        <div className="shrink-0 text-right">
           <p className="text-base-content/60 text-xs">
             {results.capacityLabel}
           </p>
@@ -34,21 +34,24 @@ function ClassCard({ estimate }: { estimate: ClassEstimate }) {
         </span>
       </p>
 
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <p className="text-base-content/55 mt-4 text-xs font-semibold tracking-wide uppercase">
+        {results.estimatedQuantity}
+      </p>
+      <ul className="divide-base-200 rounded-field border-base-200 mt-2 divide-y overflow-hidden border">
         {OBSTACLE_ORDER.map((level) => (
-          <div
+          <li
             key={level}
-            className="rounded-field border-base-200 bg-base-200/60 border p-3 text-center"
+            className="bg-base-200/40 flex items-center justify-between gap-3 px-3 py-2.5"
           >
-            <p className="readout-value font-display text-base-content text-2xl font-bold">
-              {formatNumber(estimate.count[level])}
-            </p>
-            <p className="text-base-content/70 mt-1 text-xs font-medium">
+            <span className="text-base-content/75 min-w-0 text-sm">
               {obstacle[level].label}
-            </p>
-          </div>
+            </span>
+            <span className="readout-value text-base-content shrink-0 text-xl font-bold">
+              {formatNumber(estimate.count[level])}
+            </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
@@ -59,7 +62,7 @@ export function EstimateResult({
   estimate: ExtinguisherEstimate;
 }) {
   return (
-    <section className="rounded-box border-base-300 bg-base-200/50 border p-5 sm:p-6">
+    <section className="rounded-box border-base-300 bg-base-200/50 @container border p-5 sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h3 className="font-display text-xl font-bold">
           {results.estimateTitle}
@@ -70,7 +73,7 @@ export function EstimateResult({
         {results.estimateSubtitle}
       </p>
 
-      <div className="mt-5 grid gap-4 md:grid-cols-2">
+      <div className="mt-5 grid gap-4 @xl:grid-cols-2">
         <ClassCard estimate={estimate.classA} />
         <ClassCard estimate={estimate.classB} />
       </div>

@@ -84,7 +84,7 @@ export function SpecificLoadCalculator() {
   }
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+    <div className="space-y-6">
       <form
         className="rounded-box border-base-300 bg-base-100 border p-5 sm:p-6"
         onSubmit={(event) => {
@@ -93,66 +93,71 @@ export function SpecificLoadCalculator() {
         }}
       >
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <span className="rounded-field bg-base-200 readout-value text-base-content/80 px-3 py-1 text-sm">
+          <span className="rounded-field readout-value bg-base-200 text-base-content/80 px-3 py-1 text-sm">
             {specific.formula}
           </span>
           <ReferenceList refIds={["it14"]} />
         </div>
 
-        <div className="mt-5">
-          <label htmlFor={areaFieldId} className="block text-sm font-medium">
-            {specific.areaLabel} ({specific.areaUnit})
-          </label>
-          <input
-            id={areaFieldId}
-            inputMode="decimal"
-            className="input input-bordered mt-1.5 w-full"
-            placeholder={specific.areaPlaceholder}
-            value={area}
-            onChange={(event) => setArea(event.target.value)}
-          />
-          <p className="text-base-content/60 mt-1 text-xs">
-            {specific.areaHelp}
-          </p>
-        </div>
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
+          <div>
+            <label htmlFor={areaFieldId} className="block text-sm font-medium">
+              {specific.areaLabel} ({specific.areaUnit})
+            </label>
+            <input
+              id={areaFieldId}
+              inputMode="decimal"
+              className="input input-bordered mt-1.5 w-full"
+              placeholder={specific.areaPlaceholder}
+              value={area}
+              onChange={(event) => setArea(event.target.value)}
+            />
+            <p className="text-base-content/60 mt-1 text-xs">
+              {specific.areaHelp}
+            </p>
+          </div>
 
-        <div className="mt-5">
-          <label htmlFor={searchFieldId} className="block text-sm font-medium">
-            {specific.addMaterialLabel}
-          </label>
-          <input
-            id={searchFieldId}
-            type="search"
-            autoComplete="off"
-            className="input input-bordered mt-1.5 w-full"
-            placeholder={specific.searchPlaceholder}
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          {query.trim() !== "" && (
-            <ul className="rounded-box border-base-300 mt-2 max-h-56 overflow-y-auto border">
-              {suggestions.length === 0 && (
-                <li className="text-base-content/60 px-3 py-3 text-sm">
-                  {specific.noResults}
-                </li>
-              )}
-              {suggestions.map((material) => (
-                <li key={material.name}>
-                  <button
-                    type="button"
-                    className="hover:bg-base-200 flex min-h-11 w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm"
-                    onClick={() => addMaterial(material)}
-                  >
-                    <span>{material.name}</span>
-                    <span className="readout-value text-base-content/60 shrink-0 text-xs">
-                      {formatNumber(material.hi, material.hi % 1 ? 1 : 0)}{" "}
-                      {specific.hiUnit}
-                    </span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+          <div className="relative">
+            <label
+              htmlFor={searchFieldId}
+              className="block text-sm font-medium"
+            >
+              {specific.addMaterialLabel}
+            </label>
+            <input
+              id={searchFieldId}
+              type="search"
+              autoComplete="off"
+              className="input input-bordered mt-1.5 w-full"
+              placeholder={specific.searchPlaceholder}
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            {query.trim() !== "" && (
+              <ul className="rounded-box border-base-300 bg-base-100 absolute inset-x-0 top-full z-30 mt-1 max-h-64 overflow-y-auto border shadow-lg">
+                {suggestions.length === 0 && (
+                  <li className="text-base-content/60 px-3 py-3 text-sm">
+                    {specific.noResults}
+                  </li>
+                )}
+                {suggestions.map((material) => (
+                  <li key={material.name}>
+                    <button
+                      type="button"
+                      className="hover:bg-base-200 flex min-h-11 w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm"
+                      onClick={() => addMaterial(material)}
+                    >
+                      <span>{material.name}</span>
+                      <span className="readout-value text-base-content/60 shrink-0 text-xs">
+                        {formatNumber(material.hi, material.hi % 1 ? 1 : 0)}{" "}
+                        {specific.hiUnit}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
 
         <div className="mt-5 space-y-2">
@@ -164,7 +169,7 @@ export function SpecificLoadCalculator() {
             rows.map((row) => (
               <div
                 key={row.id}
-                className="rounded-box border-base-200 bg-base-200/40 flex items-center gap-2 border p-2 pl-3"
+                className="rounded-box border-base-200 bg-base-200/40 flex items-center gap-3 border p-2 pl-3"
               >
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-sm font-medium">
@@ -176,11 +181,11 @@ export function SpecificLoadCalculator() {
                     {specific.hiUnit}
                   </p>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex shrink-0 items-center gap-1.5">
                   <input
                     inputMode="decimal"
                     aria-label={`${specific.massLabel} — ${row.material.name}`}
-                    className="input input-bordered input-sm w-24"
+                    className="input input-bordered input-sm w-28"
                     placeholder={specific.massPlaceholder}
                     value={row.mass}
                     onChange={(event) => updateMass(row.id, event.target.value)}
@@ -192,7 +197,7 @@ export function SpecificLoadCalculator() {
                 <button
                   type="button"
                   aria-label={`${specific.remove} ${row.material.name}`}
-                  className="btn btn-ghost btn-sm btn-square"
+                  className="btn btn-ghost btn-sm btn-square shrink-0"
                   onClick={() => removeRow(row.id)}
                 >
                   <RemoveIcon />
@@ -218,22 +223,20 @@ export function SpecificLoadCalculator() {
         </div>
       </form>
 
-      <div className="space-y-6">
-        {result ? (
-          <>
-            <ResultReadout
-              label={specific.resultTitle}
-              load={result.load}
-              risk={result.risk}
-            />
-            <EstimateResult estimate={result.estimate} />
-          </>
-        ) : (
-          <div className="rounded-box border-base-300 bg-base-200/40 text-base-content/60 flex h-full min-h-64 items-center justify-center border border-dashed p-8 text-center text-sm">
-            {results.placeholder}
-          </div>
-        )}
-      </div>
+      {result ? (
+        <div className="space-y-6">
+          <ResultReadout
+            label={specific.resultTitle}
+            load={result.load}
+            risk={result.risk}
+          />
+          <EstimateResult estimate={result.estimate} />
+        </div>
+      ) : (
+        <div className="rounded-box border-base-300 bg-base-200/40 text-base-content/60 flex min-h-40 items-center justify-center border border-dashed p-8 text-center text-sm">
+          {results.placeholder}
+        </div>
+      )}
     </div>
   );
 }

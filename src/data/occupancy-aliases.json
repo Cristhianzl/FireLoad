@@ -1,0 +1,9 @@
+[
+  { "terms": ["igreja", "templo", "culto", "paroquia", "capela"], "match": "organizações religiosas" },
+  { "terms": ["hotel", "pousada", "motel", "hospedagem", "albergue"], "matchGroup": "hospedagem" },
+  { "terms": ["restaurante", "lanchonete", "bar", "cantina"], "match": "restaurantes e similares" },
+  { "terms": ["escola", "colegio", "faculdade", "creche", "universidade", "ensino"], "matchGroup": "educacional" },
+  { "terms": ["hospital", "clinica", "posto de saude", "upa", "ambulatorio"], "matchGroup": "saúde" },
+  { "terms": ["escritorio"], "match": "escritório" },
+  { "terms": ["apartamento", "predio", "residencia", "condominio"], "matchGroup": "residencial" }
+]

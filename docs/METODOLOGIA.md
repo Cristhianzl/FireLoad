@@ -13,11 +13,11 @@ qfi = Σ (Mi × Hi) / Af
 ```
 
 | Símbolo | Significado                                              | Unidade |
-| ------- | ------------------------------------------------------- | ------- |
-| qfi     | carga de incêndio específica                            | MJ/m²   |
-| Mi      | massa total de cada material combustível                | kg      |
-| Hi      | potencial calorífico específico (Tabela C.1, IT 14/2025)| MJ/kg   |
-| Af      | área do piso considerada para o cálculo                 | m²      |
+| ------- | -------------------------------------------------------- | ------- |
+| qfi     | carga de incêndio específica                             | MJ/m²   |
+| Mi      | massa total de cada material combustível                 | kg      |
+| Hi      | potencial calorífico específico (Tabela C.1, IT 14/2025) | MJ/kg   |
+| Af      | área do piso considerada para o cálculo                  | m²      |
 
 Os 112 valores de potencial calorífico usados vêm literalmente da Tabela C.1 da
 IT 14/2025 e estão em `src/data/materials.json`.
@@ -31,11 +31,11 @@ teste automatizado do projeto.
 Conforme a NBR 14432 e o Regulamento de Segurança Contra Incêndio do Estado de
 São Paulo.
 
-| Risco | Carga de incêndio            |
-| ----- | ---------------------------- |
-| Baixo | até 300 MJ/m²                |
-| Médio | acima de 300 até 1200 MJ/m²  |
-| Alto  | acima de 1200 MJ/m²          |
+| Risco | Carga de incêndio           |
+| ----- | --------------------------- |
+| Baixo | até 300 MJ/m²               |
+| Médio | acima de 300 até 1200 MJ/m² |
+| Alto  | acima de 1200 MJ/m²         |
 
 ## 3. Capacidade extintora e distância
 
@@ -67,11 +67,11 @@ validado contra projetos reais.
 N = teto( Af / área coberta por extintor )
 ```
 
-| Cenário            | Coeficiente |
-| ------------------ | ----------- |
-| Livre acesso       | 1,0         |
-| Poucos obstáculos  | 0,5         |
-| Muitos obstáculos  | 0,1         |
+| Cenário           | Coeficiente |
+| ----------------- | ----------- |
+| Livre acesso      | 1,0         |
+| Poucos obstáculos | 0,5         |
+| Muitos obstáculos | 0,1         |
 
 O resultado é sempre apresentado como uma estimativa de apoio.
 

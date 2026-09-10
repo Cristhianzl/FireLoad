@@ -105,7 +105,7 @@ export const specific = {
   searchPlaceholder: "Busque um material (ex.: papel, etanol, madeira)",
   massLabel: "Massa",
   massUnit: "kg",
-  massPlaceholder: "Massa em kg",
+  massPlaceholder: "0",
   hiLabel: "Potencial calorífico",
   hiUnit: "MJ/kg",
   emptyMaterials:
@@ -150,6 +150,8 @@ export const results = {
   capacityLabel: "Capacidade extintora mínima",
   distanceLabel: "Distância máxima a percorrer",
   countLabel: "Estimativa",
+  estimatedQuantity: "Quantidade estimada de extintores",
+  byScenario: "por cenário de obstáculos",
   unit: (n: number) => `${n} ${n === 1 ? "extintor" : "extintores"}`,
   minRuleTitle: "Regras mínimas da norma",
   minRule2:

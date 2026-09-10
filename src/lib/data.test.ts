@@ -54,4 +54,16 @@ describe("occupancies dataset", () => {
   it("should return nothing for an empty query", () => {
     expect(searchOccupancies("")).toEqual([]);
   });
+
+  it("should resolve common lay terms through aliases", () => {
+    const igreja = searchOccupancies("igreja");
+    expect(igreja.length).toBeGreaterThan(0);
+    expect(
+      igreja.some((item) => item.descricao.toLowerCase().includes("religios")),
+    ).toBe(true);
+
+    expect(searchOccupancies("hotel").length).toBeGreaterThan(0);
+    expect(searchOccupancies("hospital").length).toBeGreaterThan(0);
+    expect(searchOccupancies("escola").length).toBeGreaterThan(0);
+  });
 });

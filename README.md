@@ -49,11 +49,11 @@ qfi = Σ (Mi × Hi) / Af   [MJ/m²]
 
 ### Classificação de risco (NBR 14432)
 
-| Risco  | Carga de incêndio        |
-| ------ | ------------------------ |
-| Baixo  | até 300 MJ/m²            |
-| Médio  | acima de 300 até 1200 MJ/m² |
-| Alto   | acima de 1200 MJ/m²      |
+| Risco | Carga de incêndio           |
+| ----- | --------------------------- |
+| Baixo | até 300 MJ/m²               |
+| Médio | acima de 300 até 1200 MJ/m² |
+| Alto  | acima de 1200 MJ/m²         |
 
 ### Capacidade e distância (ABNT NBR 12693:2021)
 
@@ -109,15 +109,15 @@ make dev       # sobe em http://localhost:3000
 
 Comandos principais (veja todos com `make help`):
 
-| Comando         | O que faz                              |
-| --------------- | -------------------------------------- |
-| `make dev`      | Servidor de desenvolvimento            |
-| `make build`    | Build de produção                      |
-| `make test`     | Roda os testes                         |
-| `make coverage` | Testes com relatório de cobertura      |
-| `make lint`     | Linter                                 |
-| `make format`   | Formata o código com Prettier          |
-| `make check`    | Lint, typecheck e testes               |
+| Comando         | O que faz                         |
+| --------------- | --------------------------------- |
+| `make dev`      | Servidor de desenvolvimento       |
+| `make build`    | Build de produção                 |
+| `make test`     | Roda os testes                    |
+| `make coverage` | Testes com relatório de cobertura |
+| `make lint`     | Linter                            |
+| `make format`   | Formata o código com Prettier     |
+| `make check`    | Lint, typecheck e testes          |
 
 ## Testes
 
