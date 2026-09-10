@@ -26,6 +26,7 @@ export default function AboutPage() {
         <p>{about.body1}</p>
         <p>{about.body2}</p>
         <p>{about.body3}</p>
+        <p className="text-base-content/60 text-sm">{about.author}</p>
       </div>
 
       <div className="rounded-box border-base-300 bg-base-200/60 mx-auto mt-10 max-w-3xl border p-6">

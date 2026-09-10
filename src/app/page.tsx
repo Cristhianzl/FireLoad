@@ -7,6 +7,8 @@ import { ROUTES } from "@/lib/config";
 import { faqSchema, webAppSchema } from "@/lib/schema";
 import {
   common,
+  example,
+  glossary,
   home,
   methodology,
   occupancy,
@@ -145,6 +147,58 @@ export default function HomePage() {
           <p className="text-secondary-content/80 mt-3 max-w-3xl leading-relaxed">
             {home.openSourceText}
           </p>
+        </div>
+      </section>
+
+      <section className="border-base-300 bg-base-200/40 border-t">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:py-20 lg:grid-cols-2">
+          <div>
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              {example.title}
+            </h2>
+            <p className="text-base-content/70 mt-2">{example.intro}</p>
+            <div className="rounded-box border-base-300 bg-base-100 mt-6 border p-5">
+              <p className="text-sm font-medium">{example.scenario}</p>
+              <ol className="mt-4 space-y-2">
+                {example.steps.map((step, index) => (
+                  <li
+                    key={step}
+                    className="text-base-content/80 flex gap-3 text-sm"
+                  >
+                    <span className="readout-value font-display text-primary/70 font-bold">
+                      {index + 1}
+                    </span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+              <p className="rounded-field bg-primary/10 text-primary mt-4 px-4 py-2 text-sm font-semibold">
+                {example.result}
+              </p>
+              <p className="text-base-content/55 mt-3 text-xs">
+                {example.note}
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              {glossary.title}
+            </h2>
+            <p className="text-base-content/70 mt-2">{glossary.intro}</p>
+            <dl className="mt-6 space-y-4">
+              {glossary.items.map((item) => (
+                <div key={item.term}>
+                  <dt className="text-base-content text-sm font-semibold">
+                    {item.term}
+                  </dt>
+                  <dd className="text-base-content/70 mt-0.5 text-sm">
+                    {item.def}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </section>
 

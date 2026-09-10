@@ -239,6 +239,8 @@ export const about = {
   tccText:
     "Leia o trabalho de conclusão de curso completo no repositório da UFU.",
   tccLink: "Ver o TCC na UFU",
+  author:
+    "Autoria: Cristhian Zanforlin Lousa, engenheiro civil formado pela Universidade Federal de Uberlândia (UFU). O método e os dados vêm das normas citadas e do trabalho de conclusão de curso.",
 };
 
 export const terms = {
@@ -322,7 +324,69 @@ export const faq = {
       q: "A FireLoad é gratuita?",
       a: "Sim, é gratuita e de código aberto sob licença MIT. Você pode conferir todos os cálculos no repositório público do projeto.",
     },
+    {
+      q: "Como calcular a carga de incêndio de um depósito?",
+      a: "Some a massa de cada material combustível multiplicada pelo seu potencial calorífico específico (Hi) e divida pela área do piso. Por exemplo, um depósito de papel com 60.000 kg (Hi 17 MJ/kg) em 1.500 m² dá 680 MJ/m², o que classifica o local como risco médio.",
+    },
+    {
+      q: "O que significa MJ/m²?",
+      a: "Megajoule por metro quadrado. É a unidade da carga de incêndio: quanta energia por metro quadrado de piso os materiais do ambiente poderiam liberar ao queimar. Quanto maior, maior o risco.",
+    },
+    {
+      q: "Quantos extintores são necessários por metro quadrado?",
+      a: "A norma não define uma quantidade fixa por metro quadrado. Ela define a capacidade extintora mínima e a distância máxima a percorrer até um extintor. A FireLoad estima a quantidade pela área que cada extintor cobre, ajustada pelos obstáculos do local.",
+    },
+    {
+      q: "Qual a diferença entre a IT 14 e a NBR 12693?",
+      a: "A IT 14 do Corpo de Bombeiros de São Paulo trata da carga de incêndio (quanto o ambiente pode queimar). A ABNT NBR 12693 trata do sistema de proteção por extintores (capacidade e distância). A FireLoad usa a IT 14 para a carga e a NBR 12693, junto da IT 21, para os extintores.",
+    },
   ],
+};
+
+export const glossary = {
+  title: "Glossário rápido",
+  intro: "Os termos que aparecem no cálculo, explicados em uma linha.",
+  items: [
+    {
+      term: "Carga de incêndio",
+      def: "Energia que os materiais combustíveis de um ambiente liberariam ao queimar, dividida pela área do piso. Medida em MJ/m².",
+    },
+    {
+      term: "Carga de incêndio específica (qfi)",
+      def: "A carga de incêndio calculada para um ambiente específico pelo método do Anexo C da IT 14/2025.",
+    },
+    {
+      term: "Potencial calorífico (Hi)",
+      def: "Energia que 1 kg de um material libera ao queimar, em MJ/kg. Vem da Tabela C.1 da IT 14/2025.",
+    },
+    {
+      term: "Classe de risco",
+      def: "Baixo (até 300 MJ/m²), médio (300 a 1200) ou alto (acima de 1200), conforme a NBR 14432.",
+    },
+    {
+      term: "Capacidade extintora",
+      def: "A eficácia mínima do extintor, como 2-A ou 20-B, definida na NBR 12693:2021.",
+    },
+    {
+      term: "Distância máxima a percorrer",
+      def: "O maior caminho que uma pessoa pode andar até alcançar um extintor, conforme o risco.",
+    },
+  ],
+};
+
+export const example = {
+  title: "Exemplo resolvido",
+  intro:
+    "Um depósito de papel para mostrar o cálculo do começo ao fim, usando a fórmula da norma.",
+  scenario: "Depósito de papel: 60.000 kg de papel (Hi 17 MJ/kg) em 1.500 m².",
+  steps: [
+    "Multiplique a massa pelo potencial calorífico: 60.000 kg × 17 MJ/kg = 1.020.000 MJ.",
+    "Divida pela área do piso: 1.020.000 MJ / 1.500 m² = 680 MJ/m².",
+    "Classifique o risco: 680 MJ/m² fica entre 300 e 1200, então é risco médio.",
+    "Para risco médio, a capacidade mínima classe A é 3-A, com distância máxima de 20 m.",
+  ],
+  result: "Carga de incêndio de 680 MJ/m², risco médio.",
+  note: "Este é o exemplo do trabalho de conclusão de curso que deu origem à ferramenta.",
 };
 
 export const notFound = {
