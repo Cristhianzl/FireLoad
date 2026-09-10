@@ -1,22 +1,22 @@
-# ExtinFire
+# FireLoad
 
 **Calculadora de carga de incêndio e estimativa de extintores.**
-Site: https://extinfire.vercel.app
+Site: https://fireload.vercel.app
 
 [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-0f766e.svg)](./LICENSE)
-[![Testes](https://img.shields.io/badge/testes-45%20passando-15803d.svg)](#testes)
+[![Testes](https://img.shields.io/badge/testes-46%20passando-15803d.svg)](#testes)
 [![Cobertura](https://img.shields.io/badge/cobertura%20da%20l%C3%B3gica-100%25-15803d.svg)](#testes)
 
-A ExtinFire é uma calculadora processadora, de código aberto, que ajuda a
+A FireLoad é uma calculadora processadora, de código aberto, que ajuda a
 dimensionar a segurança contra incêndio de uma edificação. Ela calcula a
 **carga de incêndio específica**, classifica o **risco** e apresenta uma
 **estimativa de extintores**. Todo cálculo roda no navegador, sem cadastro e
 sem banco de dados de usuários.
 
-Por trás da ferramenta existe um trabalho de conclusão de curso em Engenharia
-Civil, defendido na Universidade Federal de Uberlândia (UFU) em 2018. O código
-é aberto justamente para que qualquer pessoa possa auditar como cada número é
-calculado e conferir contra a norma.
+A FireLoad é a reconstrução do **ExtinFire**, aplicativo criado em um trabalho
+de conclusão de curso em Engenharia Civil defendido na Universidade Federal de
+Uberlândia (UFU) em 2018. O código é aberto justamente para que qualquer pessoa
+possa auditar como cada número é calculado e conferir contra a norma.
 
 > **Aviso.** Os resultados são uma estimativa de apoio. Não constituem projeto,
 > laudo ou parecer técnico e não substituem a análise de profissional
@@ -66,7 +66,7 @@ qfi = Σ (Mi × Hi) / Af   [MJ/m²]
 ### Estimativa da quantidade (metodologia do TCC)
 
 A norma define a capacidade e a distância máxima a percorrer, mas não uma
-fórmula fechada de quantidade. A ExtinFire estima o número de extintores pela
+fórmula fechada de quantidade. A FireLoad estima o número de extintores pela
 área que cada um cobre, um círculo de raio igual à distância máxima a
 percorrer, reduzido conforme os obstáculos do ambiente:
 

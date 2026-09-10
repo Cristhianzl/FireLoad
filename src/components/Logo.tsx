@@ -12,7 +12,7 @@ export function LogoMark({ size = 32 }: { size?: number }) {
       viewBox="0 0 40 40"
       fill="none"
       role="img"
-      aria-label="ExtinFire"
+      aria-label="FireLoad"
     >
       <rect
         x="1.5"
@@ -44,7 +44,7 @@ export function Logo({ size = 32, withWordmark = true, className }: LogoProps) {
       <LogoMark size={size} />
       {withWordmark && (
         <span className="font-display text-base-content text-xl font-bold tracking-tight">
-          Extin<span className="text-primary">Fire</span>
+          Fire<span className="text-primary">Load</span>
         </span>
       )}
     </span>

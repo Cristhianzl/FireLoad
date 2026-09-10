@@ -1,6 +1,6 @@
 # Guia de contribuição
 
-Obrigado pelo interesse em contribuir com a ExtinFire. Este documento explica
+Obrigado pelo interesse em contribuir com a FireLoad. Este documento explica
 como o projeto é organizado e o que esperar de uma contribuição.
 
 ## Princípio inegociável

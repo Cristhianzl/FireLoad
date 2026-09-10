@@ -1,12 +1,12 @@
 export const site = {
-  name: "ExtinFire",
+  name: "FireLoad",
   tagline: "Calculadora de carga de incêndio e estimativa de extintores",
   domainAction:
     "Calcule a carga de incêndio, o risco e uma estimativa de extintores em segundos.",
   email: "asz.advsys@gmail.com",
   cnpj: "57.488.277/0001-22",
   city: "Uberlândia/MG",
-  github: "https://github.com/Cristhianzl/extinfire",
+  github: "https://github.com/Cristhianzl/FireLoad",
   buymeacoffee: "https://buymeacoffee.com/cristhianlh",
   tccUrl: "https://repositorio.ufu.br/handle/123456789/21983",
   author: "Cristhian Zanforlin Lousa",
@@ -89,7 +89,7 @@ export const home = {
     "Para as ocupações já tabeladas na norma. Busque a atividade e use a carga de incêndio de referência.",
   openSourceTitle: "Aberto de ponta a ponta",
   openSourceText:
-    "O código é público sob licença MIT. Qualquer pessoa pode ver exatamente como cada conta é feita e conferir contra a norma. Por trás da ferramenta existe um trabalho acadêmico de conclusão de curso em Engenharia Civil.",
+    "O código é público sob licença MIT. Qualquer pessoa pode ver exatamente como cada conta é feita e conferir contra a norma. Por trás da ferramenta existe o ExtinFire, um trabalho acadêmico de conclusão de curso em Engenharia Civil de 2018.",
 };
 
 export const specific = {
@@ -170,7 +170,7 @@ export const results = {
 export const methodology = {
   h1: "Metodologia e fórmulas",
   intro:
-    "Esta página descreve, passo a passo, como a ExtinFire calcula a carga de incêndio, classifica o risco e estima a quantidade de extintores. Toda regra aponta a norma de onde saiu.",
+    "Esta página descreve, passo a passo, como a FireLoad calcula a carga de incêndio, classifica o risco e estima a quantidade de extintores. Toda regra aponta a norma de onde saiu.",
   section1Title: "1. Carga de incêndio específica",
   section1Body:
     "A carga de incêndio específica é a energia que os materiais combustíveis de um ambiente liberariam ao queimar, dividida pela área do piso. O método determinístico do Anexo C da IT 14/2025 usa a soma da massa de cada material multiplicada pelo seu potencial calorífico específico.",
@@ -189,7 +189,7 @@ export const methodology = {
     "A capacidade extintora mínima e a distância máxima a percorrer até um extintor vêm das Tabelas 6 e 7 da ABNT NBR 12693:2021, alinhadas à Tabela 1 da IT 21/2025.",
   section4Title: "4. Estimativa da quantidade",
   section4Body:
-    "A norma define a capacidade e a distância, mas não uma fórmula fechada de quantidade. A ExtinFire estima o número de extintores pela área que cada um cobre: um círculo de raio igual à distância máxima a percorrer, reduzido conforme os obstáculos do ambiente. Esse é o método proposto no trabalho de conclusão de curso que deu origem à ferramenta, validado contra projetos reais.",
+    "A norma define a capacidade e a distância, mas não uma fórmula fechada de quantidade. A FireLoad estima o número de extintores pela área que cada um cobre: um círculo de raio igual à distância máxima a percorrer, reduzido conforme os obstáculos do ambiente. Esse é o método proposto no ExtinFire, o trabalho de conclusão de curso de 2018 que deu origem à ferramenta, validado contra projetos reais.",
   section4Formula: "N = teto( Af / (π × d² × coeficiente) )",
   section4Legend: [
     "N: número estimado de extintores.",
@@ -213,7 +213,7 @@ export const methodologyTable = {
 export const norms = {
   h1: "Normas de referência",
   intro:
-    "Todo cálculo da ExtinFire sai de uma destas fontes oficiais. As versões abaixo eram as vigentes na última atualização da ferramenta. Consulte sempre a publicação oficial mais recente.",
+    "Todo cálculo da FireLoad sai de uma destas fontes oficiais. As versões abaixo eram as vigentes na última atualização da ferramenta. Consulte sempre a publicação oficial mais recente.",
   updatedAt: "Última verificação das versões: setembro de 2026.",
   usageTitle: "Onde cada norma é usada",
   usage: {
@@ -228,11 +228,11 @@ export const norms = {
 };
 
 export const about = {
-  h1: "Sobre a ExtinFire",
+  h1: "Sobre a FireLoad",
   body1:
-    "A ExtinFire nasceu de um trabalho de conclusão de curso em Engenharia Civil na Universidade Federal de Uberlândia, defendido em 2018. A ideia era simples: transformar as contas de carga de incêndio, que costumam ficar presas em planilhas e tabelas, em uma ferramenta rápida e confiável.",
+    "A FireLoad é a reconstrução do ExtinFire, aplicativo criado em um trabalho de conclusão de curso em Engenharia Civil na Universidade Federal de Uberlândia, defendido em 2018. A ideia era simples: transformar as contas de carga de incêndio, que costumam ficar presas em planilhas e tabelas, em uma ferramenta rápida e confiável.",
   body2:
-    "Esta versão web reconstrói aquele aplicativo do zero, agora aberta a todos e atualizada para as normas vigentes. É uma calculadora processadora: tudo acontece no seu navegador, sem cadastro e sem guardar dados pessoais.",
+    "Esta versão web refaz aquele aplicativo do zero, agora aberta a todos e atualizada para as normas vigentes. É uma calculadora processadora: tudo acontece no seu navegador, sem cadastro e sem guardar dados pessoais.",
   body3:
     "O código é público sob licença MIT justamente para que qualquer pessoa possa auditar como cada número é calculado. Segurança contra incêndio se faz com transparência.",
   tccTitle: "O estudo por trás",
@@ -246,8 +246,8 @@ export const terms = {
   updated: "Atualizado em setembro de 2026.",
   blocks: [
     {
-      title: "1. O que a ExtinFire é",
-      text: "A ExtinFire é uma ferramenta gratuita de apoio ao cálculo de carga de incêndio e à estimativa de extintores. Os cálculos são feitos no navegador, a partir dos dados que você digita, usando fórmulas e tabelas de normas oficiais.",
+      title: "1. O que a FireLoad é",
+      text: "A FireLoad é uma ferramenta gratuita de apoio ao cálculo de carga de incêndio e à estimativa de extintores. Os cálculos são feitos no navegador, a partir dos dados que você digita, usando fórmulas e tabelas de normas oficiais.",
     },
     {
       title: "2. Estimativa, não projeto",
@@ -263,7 +263,7 @@ export const terms = {
     },
     {
       title: "5. Código aberto",
-      text: "A ExtinFire é distribuída sob licença MIT. Você pode usar, estudar, adaptar e redistribuir o código, respeitando os termos da licença.",
+      text: "A FireLoad é distribuída sob licença MIT. Você pode usar, estudar, adaptar e redistribuir o código, respeitando os termos da licença.",
     },
     {
       title: "6. Contato",
@@ -278,7 +278,7 @@ export const privacy = {
   blocks: [
     {
       title: "Resumo",
-      text: "A ExtinFire não pede login, não cria conta e não guarda os dados dos seus cálculos. As massas, áreas e resultados ficam apenas no seu navegador enquanto você usa a ferramenta.",
+      text: "A FireLoad não pede login, não cria conta e não guarda os dados dos seus cálculos. As massas, áreas e resultados ficam apenas no seu navegador enquanto você usa a ferramenta.",
     },
     {
       title: "Dados de uso",
@@ -312,14 +312,14 @@ export const faq = {
     },
     {
       q: "A quantidade de extintores é exata?",
-      a: "Não. A norma define a capacidade e a distância máxima a percorrer, mas a quantidade depende do layout real. A ExtinFire dá uma estimativa por área coberta, considerando o nível de obstáculos do ambiente. O número final deve ser definido por profissional habilitado.",
+      a: "Não. A norma define a capacidade e a distância máxima a percorrer, mas a quantidade depende do layout real. A FireLoad dá uma estimativa por área coberta, considerando o nível de obstáculos do ambiente. O número final deve ser definido por profissional habilitado.",
     },
     {
       q: "A ferramenta serve para aprovar projeto no Corpo de Bombeiros?",
       a: "Ela ajuda no dimensionamento, mas não substitui o projeto técnico. O projeto de segurança contra incêndio precisa de responsável técnico habilitado e da aprovação do Corpo de Bombeiros.",
     },
     {
-      q: "A ExtinFire é gratuita?",
+      q: "A FireLoad é gratuita?",
       a: "Sim, é gratuita e de código aberto sob licença MIT. Você pode conferir todos os cálculos no repositório público do projeto.",
     },
   ],
@@ -361,18 +361,18 @@ export const seo = {
       "Lista das normas oficiais usadas nos cálculos: IT 14/2025, IT 21/2025, ABNT NBR 12693:2021 e NBR 14432, com onde cada uma é aplicada.",
   },
   about: {
-    title: "Sobre a ExtinFire e o estudo por trás",
+    title: "Sobre a FireLoad e o estudo por trás",
     description:
-      "A ExtinFire nasceu de um trabalho de conclusão de curso em Engenharia Civil na UFU. Conheça a história e leia o estudo completo.",
+      "A FireLoad nasceu de um trabalho de conclusão de curso em Engenharia Civil na UFU. Conheça a história e leia o estudo completo.",
   },
   terms: {
     title: "Termos de uso",
     description:
-      "Condições de uso da ExtinFire. Os resultados são uma estimativa de apoio e não substituem projeto de profissional habilitado.",
+      "Condições de uso da FireLoad. Os resultados são uma estimativa de apoio e não substituem projeto de profissional habilitado.",
   },
   privacy: {
     title: "Política de privacidade",
     description:
-      "A ExtinFire não pede cadastro e não guarda os dados dos seus cálculos. Entenda como a privacidade é tratada.",
+      "A FireLoad não pede cadastro e não guarda os dados dos seus cálculos. Entenda como a privacidade é tratada.",
   },
 };

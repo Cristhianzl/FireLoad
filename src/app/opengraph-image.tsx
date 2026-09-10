@@ -44,7 +44,7 @@ export default function OpengraphImage() {
             color: "#e7e9ee",
           }}
         >
-          Extin<span style={{ color: "#2dd4bf" }}>Fire</span>
+          Fire<span style={{ color: "#2dd4bf" }}>Load</span>
         </div>
       </div>
 

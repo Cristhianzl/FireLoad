@@ -2,12 +2,12 @@
 
 @plugin "daisyui" {
   themes:
-    extinfire --default,
-    extinfire-dark --prefersdark;
+    fireload --default,
+    fireload-dark --prefersdark;
 }
 
 @plugin "daisyui/theme" {
-  name: "extinfire";
+  name: "fireload";
   default: true;
   color-scheme: light;
   --color-base-100: #ffffff;
@@ -41,7 +41,7 @@
 }
 
 @plugin "daisyui/theme" {
-  name: "extinfire-dark";
+  name: "fireload-dark";
   color-scheme: dark;
   --color-base-100: #14171d;
   --color-base-200: #1b1f27;

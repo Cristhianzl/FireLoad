@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-A ExtinFire é um site estático gerado com Next.js (App Router). Não há back-end
+A FireLoad é um site estático gerado com Next.js (App Router). Não há back-end
 de aplicação nem banco de dados. As calculadoras rodam inteiramente no navegador,
 a partir dos dados que a pessoa digita.
 

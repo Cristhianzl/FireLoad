@@ -1,6 +1,6 @@
 # Metodologia
 
-Este documento descreve, com as fontes, exatamente como a ExtinFire calcula a
+Este documento descreve, com as fontes, exatamente como a FireLoad calcula a
 carga de incêndio, classifica o risco e estima a quantidade de extintores.
 
 ## 1. Carga de incêndio específica
@@ -57,7 +57,7 @@ A norma define a capacidade mínima e a distância máxima a percorrer, mas não
 fórmula fechada para a quantidade. A quantidade depende do posicionamento e dos
 obstáculos do local.
 
-A ExtinFire estima o número de extintores pela área que cada um cobre: um círculo
+A FireLoad estima o número de extintores pela área que cada um cobre: um círculo
 de raio igual à distância máxima a percorrer, reduzido por um coeficiente que
 representa os obstáculos do ambiente. Este é o método proposto no TCC de 2018,
 validado contra projetos reais.

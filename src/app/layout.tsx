@@ -70,7 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      data-theme="extinfire"
+      data-theme="fireload"
       className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="bg-base-100 text-base-content flex min-h-full flex-col">
