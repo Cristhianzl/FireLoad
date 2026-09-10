@@ -1,0 +1,45 @@
+{
+  "source": "IT 08/2019 CBPMESP, Anexo B (Tempos requeridos de resistência ao fogo)",
+  "heightClasses": [
+    { "key": "p1", "label": "Classe P1", "range": "h ≤ 6 m", "min": 0, "max": 6 },
+    { "key": "p2", "label": "Classe P2", "range": "6 m < h ≤ 12 m", "min": 6, "max": 12 },
+    { "key": "p3", "label": "Classe P3", "range": "12 m < h ≤ 23 m", "min": 12, "max": 23 },
+    { "key": "p4", "label": "Classe P4", "range": "23 m < h ≤ 30 m", "min": 23, "max": 30 },
+    { "key": "p5", "label": "Classe P5", "range": "30 m < h ≤ 80 m", "min": 30, "max": 80 },
+    { "key": "p6", "label": "Classe P6", "range": "80 m < h ≤ 120 m", "min": 80, "max": 120 },
+    { "key": "p7", "label": "Classe P7", "range": "120 m < h ≤ 150 m", "min": 120, "max": 150 },
+    { "key": "p8", "label": "Classe P8", "range": "150 m < h ≤ 250 m", "min": 150, "max": 250 }
+  ],
+  "subsoloClasses": [
+    { "key": "s1", "label": "Classe S1", "range": "hs ≤ 10 m", "min": 0, "max": 10 },
+    { "key": "s2", "label": "Classe S2", "range": "hs > 10 m", "min": 10, "max": 999 }
+  ],
+  "rows": [
+    { "grupo": "A", "grupoLabel": "Residencial", "divisao": "A-1 a A-3", "codes": ["A-1", "A-2", "A-3"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 30, "p3": 60, "p4": 90, "p5": 120, "p6": 120, "p7": 150, "p8": 180 } },
+    { "grupo": "B", "grupoLabel": "Serviços de hospedagem", "divisao": "B-1 e B-2", "codes": ["B-1", "B-2"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 180, "p8": 180 } },
+    { "grupo": "C", "grupoLabel": "Comercial varejista", "divisao": "C-1", "codes": ["C-1"], "trrf": { "s2": 90, "s1": 60, "p1": 60, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 150, "p8": 180 } },
+    { "grupo": "C", "grupoLabel": "Comercial varejista", "divisao": "C-2 e C-3", "codes": ["C-2", "C-3"], "trrf": { "s2": 90, "s1": 60, "p1": 60, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 150, "p8": 180 } },
+    { "grupo": "D", "grupoLabel": "Serviços profissionais, pessoais e técnicos", "divisao": "D-1 a D-4", "codes": ["D-1", "D-2", "D-3", "D-4"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 120, "p7": 150, "p8": 180 } },
+    { "grupo": "E", "grupoLabel": "Educacional e cultura física", "divisao": "E-1 a E-6", "codes": ["E-1", "E-2", "E-3", "E-4", "E-5", "E-6"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 30, "p3": 60, "p4": 90, "p5": 120, "p6": 120, "p7": 150, "p8": 180 } },
+    { "grupo": "F", "grupoLabel": "Locais de reunião de público", "divisao": "F-1, F-2, F-5, F-6, F-8, F-10 e F-11", "codes": ["F-1", "F-2", "F-5", "F-6", "F-8", "F-10", "F-11"], "trrf": { "s2": 90, "s1": 60, "p1": 60, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 180, "p8": null } },
+    { "grupo": "F", "grupoLabel": "Locais de reunião de público", "divisao": "F-3, F-4 e F-7", "codes": ["F-3", "F-4", "F-7"], "trrf": { "s2": 90, "s1": 60, "p1": "ver:A.2.3.3", "p2": 30, "p3": 60, "p4": 60, "p5": 90, "p6": 120, "p7": null, "p8": null } },
+    { "grupo": "F", "grupoLabel": "Locais de reunião de público", "divisao": "F-9", "codes": ["F-9"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "G", "grupoLabel": "Serviços automotivos", "divisao": "G-1 e G-2 não abertos lateralmente e G-3 a G-5", "codes": ["G-1", "G-2", "G-3", "G-4", "G-5"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 120, "p7": 150, "p8": 180 } },
+    { "grupo": "G", "grupoLabel": "Serviços automotivos (G-1 e G-2 abertos lateralmente)", "divisao": "G-1 e G-2 abertos lateralmente", "codes": ["G-1-aberto", "G-2-aberto"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 30, "p3": 30, "p4": 30, "p5": 60, "p6": 120, "p7": 120, "p8": 150 } },
+    { "grupo": "H", "grupoLabel": "Serviços de saúde e institucionais", "divisao": "H-1 e H-4", "codes": ["H-1", "H-4"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 180, "p8": 180 } },
+    { "grupo": "H", "grupoLabel": "Serviços de saúde e institucionais", "divisao": "H-2, H-3, H-5 e H-6", "codes": ["H-2", "H-3", "H-5", "H-6"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 60, "p3": 60, "p4": 90, "p5": 120, "p6": 150, "p7": 180, "p8": 180 } },
+    { "grupo": "I", "grupoLabel": "Industrial", "divisao": "I-1", "codes": ["I-1"], "trrf": { "s2": 90, "s1": 60, "p1": 30, "p2": 30, "p3": 30, "p4": 60, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "I", "grupoLabel": "Industrial", "divisao": "I-2", "codes": ["I-2"], "trrf": { "s2": 120, "s1": 90, "p1": 30, "p2": 30, "p3": 60, "p4": 90, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "I", "grupoLabel": "Industrial", "divisao": "I-3", "codes": ["I-3"], "trrf": { "s2": 120, "s1": 90, "p1": 60, "p2": 60, "p3": 90, "p4": 120, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "J", "grupoLabel": "Depósitos", "divisao": "J-1", "codes": ["J-1"], "trrf": { "s2": 60, "s1": 30, "p1": "ver:A.2.3.4", "p2": 30, "p3": 30, "p4": 60, "p5": null, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "J", "grupoLabel": "Depósitos", "divisao": "J-2", "codes": ["J-2"], "trrf": { "s2": 90, "s1": 60, "p1": 60, "p2": 60, "p3": 60, "p4": 60, "p5": 60, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "J", "grupoLabel": "Depósitos", "divisao": "J-3", "codes": ["J-3"], "trrf": { "s2": 90, "s1": 60, "p1": 60, "p2": 60, "p3": 60, "p4": 120, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "J", "grupoLabel": "Depósitos", "divisao": "J-4", "codes": ["J-4"], "trrf": { "s2": 120, "s1": 90, "p1": 60, "p2": 60, "p3": 90, "p4": 120, "p5": 120, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "L", "grupoLabel": "Explosivos", "divisao": "L-1, L-2 e L-3", "codes": ["L-1", "L-2", "L-3"], "trrf": { "s2": 120, "s1": 120, "p1": 120, "p2": null, "p3": null, "p4": null, "p5": null, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "M", "grupoLabel": "Especial", "divisao": "M-1", "codes": ["M-1"], "trrf": { "s2": 150, "s1": 150, "p1": 150, "p2": null, "p3": null, "p4": null, "p5": null, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "M", "grupoLabel": "Especial", "divisao": "M-2", "codes": ["M-2"], "trrf": { "s2": null, "s1": null, "p1": 120, "p2": 120, "p3": null, "p4": null, "p5": null, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "M", "grupoLabel": "Especial", "divisao": "M-5", "codes": ["M-5"], "trrf": { "s2": 120, "s1": 90, "p1": 60, "p2": 60, "p3": 90, "p4": 120, "p5": null, "p6": null, "p7": null, "p8": null } },
+    { "grupo": "M", "grupoLabel": "Especial", "divisao": "M-3", "codes": ["M-3"], "trrf": { "s2": 120, "s1": 90, "p1": 90, "p2": 90, "p3": 120, "p4": 120, "p5": 120, "p6": 150, "p7": null, "p8": null } },
+    { "grupo": "K", "grupoLabel": "Energia", "divisao": "K-1", "codes": ["K-1"], "trrf": { "s2": 120, "s1": 90, "p1": 90, "p2": 90, "p3": 120, "p4": 120, "p5": 120, "p6": 150, "p7": null, "p8": null } }
+  ]
+}

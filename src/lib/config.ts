@@ -6,6 +6,7 @@ export const ROUTES = {
   home: "/",
   fireLoad: "/",
   extinguishers: "/extintores",
+  trrf: "/trrf",
   methodology: "/metodologia",
   norms: "/normas",
   about: "/sobre",

@@ -57,6 +57,14 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
+                  href={ROUTES.trrf}
+                  className="link link-hover text-base-content/70"
+                >
+                  {nav.trrf}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={ROUTES.methodology}
                   className="link link-hover text-base-content/70"
                 >

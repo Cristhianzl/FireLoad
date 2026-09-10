@@ -10,6 +10,7 @@ import { nav } from "@/locales/pt-BR";
 const LINKS = [
   { href: ROUTES.fireLoad, label: nav.fireLoad },
   { href: ROUTES.extinguishers, label: nav.extinguishers },
+  { href: ROUTES.trrf, label: nav.trrf },
   { href: ROUTES.methodology, label: nav.methodology },
   { href: ROUTES.norms, label: nav.norms },
 ];

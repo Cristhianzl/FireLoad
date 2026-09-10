@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: ROUTES.norms },
 };
 
-const ORDER = ["it14", "it21", "nbr12693", "nbr14432", "tcc"] as const;
+const ORDER = ["it14", "it21", "it08", "nbr12693", "nbr14432", "tcc"] as const;
 
 export default function NormsPage() {
   return (

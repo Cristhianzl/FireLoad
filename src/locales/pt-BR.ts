@@ -16,6 +16,7 @@ export const nav = {
   home: "Início",
   fireLoad: "Carga de incêndio",
   extinguishers: "Extintores",
+  trrf: "TRRF",
   methodology: "Metodologia",
   norms: "Normas",
   about: "Sobre",
@@ -218,6 +219,7 @@ export const norms = {
   usageTitle: "Onde cada norma é usada",
   usage: {
     it14: "Fórmula da carga de incêndio específica, tabela de potenciais caloríficos e cargas por ocupação.",
+    it08: "Tabela de tempo requerido de resistência ao fogo (TRRF) por ocupação e altura, no Anexo B.",
     it21: "Critérios de proteção por extintores e distância máxima a percorrer no Estado de São Paulo.",
     nbr12693:
       "Capacidade extintora mínima e distância por classe de risco (Tabelas 6 e 7).",
@@ -343,6 +345,45 @@ export const faq = {
   ],
 };
 
+export const trrf = {
+  h1: "Calculadora de TRRF (tempo requerido de resistência ao fogo)",
+  intro:
+    "Consulta o TRRF base pela tabela do Anexo B da IT 08. Escolha a divisão de ocupação, diga se é pavimento acima do solo ou subsolo, e informe a altura.",
+  divisionLabel: "Divisão de ocupação",
+  divisionPlaceholder:
+    "Busque a ocupação (ex.: residencial, indústria, hospital)",
+  placementLabel: "Situação do pavimento",
+  placementAbove: "Acima do solo",
+  placementSubsolo: "Subsolo",
+  heightLabel: "Altura da edificação (h)",
+  heightHelp:
+    "Medida do piso do pavimento mais baixo ao piso do último pavimento, em metro.",
+  heightPlaceholder: "Ex.: 18",
+  subsoloLabel: "Profundidade do subsolo (hs)",
+  subsoloHelp:
+    "Distância do piso do subsolo mais baixo até o nível do solo, em metro.",
+  subsoloPlaceholder: "Ex.: 6",
+  calculate: "Consultar TRRF",
+  reset: "Limpar",
+  resultTitle: "TRRF base",
+  resultUnit: "minutos",
+  classLabel: "Classe de altura",
+  errorDivision: "Selecione uma divisão de ocupação.",
+  errorHeight: "Informe uma altura maior que zero.",
+  naTitle: "Não tabelado para esta classe",
+  naText:
+    "A tabela do Anexo B não define TRRF para esta divisão nesta classe de altura. Consulte a IT 08 e um profissional habilitado.",
+  seeItemTitle: "Depende de análise específica",
+  seeItemText: (item: string) =>
+    `Para esta classe, o TRRF depende do item ${item} da IT 08. Consulte a instrução e um profissional habilitado.`,
+  outOfRangeTitle: "Fora da faixa da tabela",
+  outOfRangeText:
+    "A altura informada está fora das classes P1 a P8 (até 250 m). Consulte a IT 08 e um profissional habilitado.",
+  placeholder: "O TRRF aparece aqui.",
+  warning:
+    "Isto é o TRRF base da tabela. A ferramenta não aplica as isenções do Anexo A nem as reduções do Anexo E da IT 08, que dependem de análise de profissional habilitado.",
+};
+
 export const glossary = {
   title: "Glossário rápido",
   intro: "Os termos que aparecem no cálculo, explicados em uma linha.",
@@ -413,6 +454,11 @@ export const seo = {
     title: "Estimativa de extintores por ocupação",
     description:
       "Escolha a ocupação, informe a área e receba a carga de incêndio de referência com uma estimativa de extintores. Baseado na IT 14/2025 e NBR 12693:2021.",
+  },
+  trrf: {
+    title: "Calculadora de TRRF, tempo requerido de resistência ao fogo",
+    description:
+      "Consulte o TRRF base pela tabela do Anexo B da IT 08 do Corpo de Bombeiros de SP. Informe a divisão de ocupação e a altura da edificação.",
   },
   methodology: {
     title: "Metodologia e fórmulas do cálculo de carga de incêndio",
