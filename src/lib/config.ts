@@ -1,6 +1,6 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://fireload.vercel.app";
+  "https://fireload.com.br";
 
 export const ROUTES = {
   home: "/",

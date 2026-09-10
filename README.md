@@ -1,7 +1,7 @@
 # FireLoad
 
 **Calculadora de carga de incêndio e estimativa de extintores.**
-Site: https://fireload.vercel.app
+Site: https://fireload.com.br
 
 [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-0f766e.svg)](./LICENSE)
 [![Testes](https://img.shields.io/badge/testes-46%20passando-15803d.svg)](#testes)
