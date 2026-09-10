@@ -62,6 +62,8 @@ src/
   app/
     page.tsx                calculadora de carga de incêndio (home)
     extintores/             estimativa por ocupação
+    trrf/                   tempo requerido de resistência ao fogo
+    saidas-de-emergencia/   lotação e largura das saídas
     metodologia/            fórmulas e normas
     normas/                 lista das normas de referência
     sobre/ termos/ privacidade/

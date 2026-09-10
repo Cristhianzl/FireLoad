@@ -7,6 +7,7 @@ export const ROUTES = {
   fireLoad: "/",
   extinguishers: "/extintores",
   trrf: "/trrf",
+  exits: "/saidas-de-emergencia",
   methodology: "/metodologia",
   norms: "/normas",
   about: "/sobre",

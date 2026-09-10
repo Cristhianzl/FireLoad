@@ -65,6 +65,14 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
+                  href={ROUTES.exits}
+                  className="link link-hover text-base-content/70"
+                >
+                  {nav.exits}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={ROUTES.methodology}
                   className="link link-hover text-base-content/70"
                 >

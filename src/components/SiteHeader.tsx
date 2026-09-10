@@ -11,6 +11,7 @@ const LINKS = [
   { href: ROUTES.fireLoad, label: nav.fireLoad },
   { href: ROUTES.extinguishers, label: nav.extinguishers },
   { href: ROUTES.trrf, label: nav.trrf },
+  { href: ROUTES.exits, label: nav.exits },
   { href: ROUTES.methodology, label: nav.methodology },
   { href: ROUTES.norms, label: nav.norms },
 ];

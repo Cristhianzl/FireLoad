@@ -4,7 +4,7 @@
 Site: https://fireload.com.br
 
 [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-0f766e.svg)](./LICENSE)
-[![Testes](https://img.shields.io/badge/testes-46%20passando-15803d.svg)](#testes)
+[![Testes](https://img.shields.io/badge/testes-71%20passando-15803d.svg)](#testes)
 [![Cobertura](https://img.shields.io/badge/cobertura%20da%20l%C3%B3gica-100%25-15803d.svg)](#testes)
 
 A FireLoad é uma calculadora processadora, de código aberto, que ajuda a
@@ -30,6 +30,10 @@ possa auditar como cada número é calculado e conferir contra a norma.
   calorífico da Tabela C.1.
 - **Estimativa de extintores por ocupação** (por atividade). Usa as 809
   ocupações tabeladas no Anexo A da IT 14/2025.
+- **Calculadora de TRRF** (tempo requerido de resistência ao fogo). Consulta o
+  TRRF base pela tabela do Anexo B da IT 08, por ocupação e altura.
+- **Calculadora de lotação e saídas de emergência**. Calcula a população e a
+  largura mínima de acessos, escadas e portas pela Tabela 1 da IT 11.
 - Classificação de risco (baixo, médio, alto) conforme a NBR 14432.
 - Estimativa de extintores por classe (A e B) para três cenários de layout:
   livre acesso, poucos obstáculos e muitos obstáculos.
@@ -84,6 +88,8 @@ Detalhes completos em [docs/METODOLOGIA.md](./docs/METODOLOGIA.md).
 - **IT 14/2025** (CBPMESP) — Carga de incêndio nas edificações e áreas de risco.
 - **IT 21/2025** (CBPMESP) — Sistema de proteção por extintores de incêndio.
 - **ABNT NBR 12693:2021** — Sistemas de proteção por extintores de incêndio.
+- **IT 08/2019** (CBPMESP) — Resistência ao fogo dos elementos de construção (TRRF).
+- **IT 11/2025** (CBPMESP) — Saídas de emergência.
 - **ABNT NBR 14432:2001** — Classificação da carga de incêndio em risco.
 - **TCC UFU 2018** — Método de estimativa por área coberta:
   https://repositorio.ufu.br/handle/123456789/21983
@@ -122,7 +128,7 @@ Comandos principais (veja todos com `make help`):
 ## Testes
 
 A lógica principal (a pasta `src/lib`) tem cobertura de 100%, acima da meta de
-90%. São 45 testes cobrindo a fórmula da carga de incêndio, a classificação de
+90%. São 71 testes cobrindo a fórmula da carga de incêndio, a classificação de
 risco, a estimativa de extintores, a busca, os dados normativos e o fluxo da
 calculadora na interface.
 

@@ -84,10 +84,47 @@ O resultado é sempre apresentado como uma estimativa de apoio.
   (IT 21/2025, item 4.2.1.12.3).
 - O extintor de pó ABC pode substituir extintores das classes A, B e C.
 
+## 6. TRRF (tempo requerido de resistência ao fogo)
+
+Consulta pela tabela do Anexo B da IT 08. O TRRF depende da divisão de ocupação
+e da classe de altura da edificação (P1 a P8) ou da profundidade do subsolo
+(S1, S2). A ferramenta faz a consulta base e não aplica as isenções do Anexo A
+nem as reduções do Anexo E, que exigem profissional habilitado.
+
+| Classe | Faixa             |
+| ------ | ----------------- |
+| P1     | h ≤ 6 m           |
+| P2     | 6 m < h ≤ 12 m    |
+| P3     | 12 m < h ≤ 23 m   |
+| P4     | 23 m < h ≤ 30 m   |
+| P5     | 30 m < h ≤ 80 m   |
+| P6     | 80 m < h ≤ 120 m  |
+| P7     | 120 m < h ≤ 150 m |
+| P8     | 150 m < h ≤ 250 m |
+
+## 7. Lotação e saídas de emergência
+
+Pela Tabela 1 da IT 11. A população vem de um coeficiente por ocupação (por
+área, por dormitório, por leito ou por vaga). A largura das saídas usa a unidade
+de passagem de 0,55 m:
+
+```
+N = teto( População / Capacidade da unidade de passagem )
+Largura = N × 0,55 m
+```
+
+A capacidade da unidade de passagem é dada por componente (acessos e descargas,
+escadas e rampas, portas). A ferramenta calcula largura por unidades de
+passagem; larguras mínimas absolutas, número mínimo de saídas e distâncias
+máximas a percorrer dependem dos demais itens da IT 11 e de profissional
+habilitado.
+
 ## Fontes
 
 - IT 14/2025, CBPMESP. https://www.corpodebombeiros.sp.gov.br/
 - IT 21/2025, CBPMESP. https://www.corpodebombeiros.sp.gov.br/
+- IT 08/2019, CBPMESP (Anexo B, TRRF).
+- IT 11/2025, CBPMESP (Anexo A, Tabela 1).
 - ABNT NBR 12693:2021.
 - ABNT NBR 14432:2001.
 - Lousa, C. Z. Aplicativo para cálculo de cargas de incêndio específicas. TCC,

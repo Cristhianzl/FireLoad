@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: ROUTES.home, priority: 1, changeFrequency: "monthly" },
     { path: ROUTES.extinguishers, priority: 0.9, changeFrequency: "monthly" },
     { path: ROUTES.trrf, priority: 0.9, changeFrequency: "monthly" },
+    { path: ROUTES.exits, priority: 0.9, changeFrequency: "monthly" },
     { path: ROUTES.methodology, priority: 0.7, changeFrequency: "monthly" },
     { path: ROUTES.norms, priority: 0.6, changeFrequency: "monthly" },
     { path: ROUTES.about, priority: 0.4, changeFrequency: "yearly" },

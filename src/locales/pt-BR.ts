@@ -17,6 +17,7 @@ export const nav = {
   fireLoad: "Carga de incêndio",
   extinguishers: "Extintores",
   trrf: "TRRF",
+  exits: "Saídas",
   methodology: "Metodologia",
   norms: "Normas",
   about: "Sobre",
@@ -220,6 +221,7 @@ export const norms = {
   usage: {
     it14: "Fórmula da carga de incêndio específica, tabela de potenciais caloríficos e cargas por ocupação.",
     it08: "Tabela de tempo requerido de resistência ao fogo (TRRF) por ocupação e altura, no Anexo B.",
+    it11: "Coeficientes de população e capacidade das unidades de passagem para o dimensionamento das saídas (Tabela 1).",
     it21: "Critérios de proteção por extintores e distância máxima a percorrer no Estado de São Paulo.",
     nbr12693:
       "Capacidade extintora mínima e distância por classe de risco (Tabelas 6 e 7).",
@@ -345,6 +347,39 @@ export const faq = {
   ],
 };
 
+export const exits = {
+  h1: "Calculadora de lotação e saídas de emergência",
+  intro:
+    "Calcula a população e a largura mínima das saídas (acessos, escadas e portas) pela Tabela 1 da IT 11. Escolha a ocupação e informe a área do pavimento.",
+  divisionLabel: "Ocupação",
+  divisionPlaceholder: "Busque a ocupação (ex.: comercial, escola, indústria)",
+  popRuleLabel: "Regra de população",
+  areaLabel: "Área do pavimento",
+  areaHelp: "Área do piso que serve à população, em metro quadrado.",
+  areaPlaceholder: "Ex.: 1000",
+  populationLabel: "População",
+  populationHelp:
+    "Esta ocupação não é calculada por área. Informe a população conforme a regra acima.",
+  populationPlaceholder: "Ex.: 200",
+  calculate: "Dimensionar saídas",
+  reset: "Limpar",
+  populationResult: "População",
+  unitPeople: "pessoas",
+  componentAcessos: "Acessos e descargas",
+  componentEscadas: "Escadas e rampas",
+  componentPortas: "Portas",
+  unitsLabel: "Unidades de passagem",
+  widthLabel: "Largura mínima",
+  capacityLabel: "Capacidade por UP",
+  unitWidthNote: "1 unidade de passagem (UP) = 0,55 m. Largura = UP × 0,55 m.",
+  errorDivision: "Selecione uma ocupação.",
+  errorArea: "Informe uma área maior que zero.",
+  errorPopulation: "Informe uma população maior que zero.",
+  warning:
+    "A ferramenta calcula a largura por unidades de passagem. Ela não define larguras mínimas absolutas, número mínimo de saídas nem distâncias máximas a percorrer (itens 4.4 e Anexos da IT 11), que dependem de análise de profissional habilitado.",
+  placeholder: "O dimensionamento aparece aqui.",
+};
+
 export const trrf = {
   h1: "Calculadora de TRRF (tempo requerido de resistência ao fogo)",
   intro:
@@ -454,6 +489,11 @@ export const seo = {
     title: "Estimativa de extintores por ocupação",
     description:
       "Escolha a ocupação, informe a área e receba a carga de incêndio de referência com uma estimativa de extintores. Baseado na IT 14/2025 e NBR 12693:2021.",
+  },
+  exits: {
+    title: "Calculadora de lotação e saídas de emergência (IT 11)",
+    description:
+      "Calcule a população e a largura mínima das saídas de emergência (acessos, escadas e portas) pela Tabela 1 da IT 11 do Corpo de Bombeiros de SP.",
   },
   trrf: {
     title: "Calculadora de TRRF, tempo requerido de resistência ao fogo",
