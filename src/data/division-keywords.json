@@ -1,0 +1,15 @@
+[
+  { "grupos": ["A"], "terms": ["residencial", "apartamento", "casa", "predio", "condominio", "dormitorio"] },
+  { "grupos": ["B"], "terms": ["hotel", "pousada", "motel", "hospedagem", "albergue", "pensionato"] },
+  { "grupos": ["C"], "terms": ["comercial", "comercio", "loja", "supermercado", "mercado", "shopping", "varejo"] },
+  { "grupos": ["D"], "terms": ["escritorio", "consultorio", "servico", "banco", "reparticao", "laboratorio"] },
+  { "grupos": ["E"], "terms": ["escola", "colegio", "faculdade", "universidade", "creche", "ensino", "academia", "ginasio"] },
+  { "grupos": ["F"], "terms": ["igreja", "templo", "culto", "reuniao", "teatro", "cinema", "auditorio", "restaurante", "boate", "estadio", "clube", "museu", "biblioteca"] },
+  { "grupos": ["G"], "terms": ["estacionamento", "garagem", "posto", "oficina", "automotivo", "hangar"] },
+  { "grupos": ["H"], "terms": ["hospital", "clinica", "saude", "asilo", "presidio", "quartel", "ambulatorio", "institucional"] },
+  { "grupos": ["I"], "terms": ["industria", "fabrica", "industrial", "producao"] },
+  { "grupos": ["J"], "terms": ["deposito", "armazem", "galpao", "estoque"] },
+  { "grupos": ["K"], "terms": ["energia", "central eletrica", "usina", "subestacao"] },
+  { "grupos": ["L"], "terms": ["explosivos", "polvora", "municao"] },
+  { "grupos": ["M"], "terms": ["especial", "tunel", "silo", "container", "liquido inflamavel"] }
+]

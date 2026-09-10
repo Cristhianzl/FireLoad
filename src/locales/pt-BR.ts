@@ -201,6 +201,24 @@ export const methodology = {
   ],
   section4Note:
     "Por ser uma estimativa geométrica, o resultado é um ponto de partida. O projeto final é sempre responsabilidade de profissional habilitado.",
+  trrfTitle: "5. TRRF (tempo requerido de resistência ao fogo)",
+  trrfBody:
+    "O TRRF é o tempo, em minutos, que os elementos estruturais precisam resistir ao fogo. A consulta usa a tabela do Anexo B da IT 08, cruzando a divisão de ocupação com a classe de altura da edificação (P1 a P8) ou a profundidade do subsolo (S1 e S2).",
+  trrfClassesTitle: "Classes de altura (pavimentos acima do solo)",
+  trrfNote:
+    "A ferramenta faz a consulta base da tabela. Ela não aplica as isenções do Anexo A nem as reduções do Anexo E da IT 08, que dependem de profissional habilitado.",
+  exitsTitle: "6. Lotação e saídas de emergência",
+  exitsBody:
+    "A população de um pavimento vem de um coeficiente por ocupação (Tabela 1 da IT 11): por área, por dormitório, por leito ou por vaga. A largura das saídas é dimensionada por unidades de passagem, cada uma com 0,55 m.",
+  exitsFormula: "N = teto( População / C )   e   Largura = N × 0,55 m",
+  exitsLegend: [
+    "População: coeficiente da Tabela 1 aplicado à área ou aos elementos do ambiente.",
+    "C: capacidade da unidade de passagem, por componente (acessos e descargas, escadas e rampas, portas).",
+    "N: número de unidades de passagem, sempre arredondado para cima.",
+    "Largura: N multiplicado por 0,55 m.",
+  ],
+  exitsNote:
+    "A ferramenta calcula a largura por unidades de passagem. Larguras mínimas absolutas, número mínimo de saídas e distâncias máximas a percorrer dependem dos demais itens da IT 11 e de profissional habilitado.",
 };
 
 export const methodologyTable = {
@@ -373,6 +391,7 @@ export const exits = {
   capacityLabel: "Capacidade por UP",
   unitWidthNote: "1 unidade de passagem (UP) = 0,55 m. Largura = UP × 0,55 m.",
   errorDivision: "Selecione uma ocupação.",
+  noResults: "Nenhuma ocupação encontrada. Tente outro termo.",
   errorArea: "Informe uma área maior que zero.",
   errorPopulation: "Informe uma população maior que zero.",
   warning:
@@ -400,6 +419,7 @@ export const trrf = {
   subsoloPlaceholder: "Ex.: 6",
   calculate: "Consultar TRRF",
   reset: "Limpar",
+  noResults: "Nenhuma divisão encontrada. Tente outro termo.",
   resultTitle: "TRRF base",
   resultUnit: "minutos",
   classLabel: "Classe de altura",

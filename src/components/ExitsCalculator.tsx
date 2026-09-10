@@ -12,6 +12,7 @@ import {
   type ExitsResult,
   type ExitsRow,
 } from "@/lib/exits";
+import { keywordsForGrupo } from "@/lib/division-keywords";
 import { formatNumber, parseDecimal } from "@/lib/format";
 import { matchesQuery } from "@/lib/search";
 import { exits } from "@/locales/pt-BR";
@@ -35,13 +36,13 @@ export function ExitsCalculator() {
     if (!query.trim()) return [];
     return EXITS_ROWS.filter((row) =>
       matchesQuery(
-        `${row.divisao} ${row.grupoLabel} ${row.codes.join(" ")}`,
+        `${row.divisao} ${row.grupoLabel} ${row.codes.join(" ")} ${keywordsForGrupo(row.grupo)}`,
         query,
       ),
     ).slice(0, 12);
   }, [query]);
 
-  const byArea = Boolean(selected?.density);
+  const byArea = selected ? Boolean(selected.density) : true;
 
   function choose(row: ExitsRow) {
     setSelected(row);
@@ -109,7 +110,7 @@ export function ExitsCalculator() {
             <ul className="rounded-box border-base-300 bg-base-100 absolute inset-x-0 top-full z-30 mt-1 max-h-72 overflow-y-auto border shadow-lg">
               {suggestions.length === 0 && (
                 <li className="text-base-content/60 px-3 py-3 text-sm">
-                  {exits.errorDivision}
+                  {exits.noResults}
                 </li>
               )}
               {suggestions.map((row) => (
@@ -167,7 +168,7 @@ export function ExitsCalculator() {
             onChange={(event) => setValue(event.target.value)}
           />
           <p className="text-base-content/60 mt-1 text-xs">
-            {selected && !byArea ? exits.populationHelp : exits.areaHelp}
+            {byArea ? exits.areaHelp : exits.populationHelp}
           </p>
         </div>
 

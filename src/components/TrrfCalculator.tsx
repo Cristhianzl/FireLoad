@@ -3,6 +3,7 @@
 import { track } from "@vercel/analytics";
 import { useId, useMemo, useState } from "react";
 import { ReferenceList } from "@/components/ReferenceChip";
+import { keywordsForGrupo } from "@/lib/division-keywords";
 import { parseDecimal } from "@/lib/format";
 import { matchesQuery } from "@/lib/search";
 import {
@@ -28,7 +29,7 @@ export function TrrfCalculator() {
     if (!query.trim()) return [];
     return TRRF_ROWS.filter((row) =>
       matchesQuery(
-        `${row.divisao} ${row.grupoLabel} ${row.codes.join(" ")}`,
+        `${row.divisao} ${row.grupoLabel} ${row.codes.join(" ")} ${keywordsForGrupo(row.grupo)}`,
         query,
       ),
     ).slice(0, 12);
@@ -111,7 +112,7 @@ export function TrrfCalculator() {
             <ul className="rounded-box border-base-300 bg-base-100 absolute inset-x-0 top-full z-30 mt-1 max-h-72 overflow-y-auto border shadow-lg">
               {suggestions.length === 0 && (
                 <li className="text-base-content/60 px-3 py-3 text-sm">
-                  {trrf.errorDivision}
+                  {trrf.noResults}
                 </li>
               )}
               {suggestions.map((row) => (
