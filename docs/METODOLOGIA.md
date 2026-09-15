@@ -79,7 +79,9 @@ O resultado é sempre apresentado como uma estimativa de apoio.
 
 - Cada pavimento deve ter no mínimo duas unidades extintoras, uma para classe A
   e outra para classes B e C (NBR 12693:2021, item 5.5.1.3).
-- Abaixo de 100 m² é permitida uma única unidade de pó ABC (NBR 12693:2021).
+- Abaixo de 100 m² é permitida uma única unidade de pó ABC (NBR 12693:2021,
+  item 5.5.1.3.1). No Estado de São Paulo a IT 21/2025 (item 4.2.1.7) é mais
+  restritiva e só admite a unidade única em áreas inferiores a 50 m².
 - Ao menos um extintor a no máximo 5 m da entrada principal e das escadas
   (IT 21/2025, item 4.2.1.12.3).
 - O extintor de pó ABC pode substituir extintores das classes A, B e C.

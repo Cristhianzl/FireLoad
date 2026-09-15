@@ -91,7 +91,7 @@ export const results = {
   minRule2:
     "Cada pavimento deve ter, no mínimo, duas unidades extintoras, sendo uma para classe A e outra para classes B e C.",
   minRuleSingle:
-    "Abaixo de 100 m² é permitida uma única unidade extintora de pó ABC que atenda às classes A, B e C.",
+    "Abaixo de 100 m² a ABNT NBR 12693:2021 permite uma única unidade extintora de pó ABC. No Estado de São Paulo, a IT 21/2025 só admite essa unidade única em áreas inferiores a 50 m².",
   mandatoryExit:
     "Ao menos um extintor deve ficar a no máximo 5 metros da entrada principal e das escadas nos demais pavimentos.",
   estimateWarning:
