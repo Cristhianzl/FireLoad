@@ -5,8 +5,11 @@ carga de incêndio, classifica o risco e estima a quantidade de extintores.
 
 ## 1. Carga de incêndio específica
 
-Método determinístico do Anexo C da IT 14/2025 (CBPMESP), indicado para
-depósitos, explosivos e ocupações especiais sem carga tabelada.
+Método determinístico do Anexo C da IT 14/2025 (CBPMESP). Pelo item 4.1, ele
+se aplica a explosivos (Grupo L) e ocupações especiais (Grupo M) sem carga
+pré-definida no Anexo A. O levantamento é feito em módulos de até 1000 m² de
+piso, e a carga do piso é a média dos 2 módulos de maior valor (itens 4.4 e
+4.4.1).
 
 ```
 qfi = Σ (Mi × Hi) / Af
@@ -24,7 +27,27 @@ IT 14/2025 e estão em `src/data/materials.json`.
 
 **Exemplo do TCC.** Depósito de papel com 60.000 kg em 1.500 m². Papel tem
 Hi = 17 MJ/kg. Então qfi = (60.000 × 17) / 1.500 = 680 MJ/m². Este caso é um
-teste automatizado do projeto.
+teste automatizado do projeto. Ele ilustra a fórmula: pela IT 14/2025, um
+depósito real segue o Anexo B (seção 1.1).
+
+## 1.1 Carga de incêndio de depósitos (Anexo B)
+
+Pelo item 4.3 da IT 14/2025, os depósitos (Grupo J) usam obrigatoriamente a
+tabela do Anexo B, que dá a carga de incêndio em MJ/m² pelo material armazenado
+e pela altura de armazenamento (1, 2, 4, 6, 8 e 10 m). A nota da tabela diz:
+"Pode haver interpolação entre os valores."
+
+```
+q = q₁ + (h − h₁) / (h₂ − h₁) × (q₂ − q₁)
+```
+
+Os 90 materiais estão em `src/data/storage.json`. Um teste confere que toda
+linha é proporcional à altura, com diferença máxima de 1 MJ/m² de
+arredondamento, o que também protege contra erro de transcrição. Fora da faixa
+de 1 a 10 m a ferramenta não extrapola.
+
+**Exemplo.** Papel empilhado a 3 m: 7.560 MJ/m² (2 m) e 15.120 MJ/m² (4 m) dão
+11.340 MJ/m², risco alto.
 
 ## 2. Classificação de risco
 
@@ -123,7 +146,8 @@ habilitado.
 
 ## Fontes
 
-- IT 14/2025, CBPMESP. https://www.corpodebombeiros.sp.gov.br/
+- IT 14/2025, CBPMESP (Anexos A, B e C). Portaria nº CCB 003/800/25, DOE de
+  20/03/2025. https://www.corpodebombeiros.sp.gov.br/
 - IT 21/2025, CBPMESP. https://www.corpodebombeiros.sp.gov.br/
 - IT 08/2019, CBPMESP (Anexo B, TRRF).
 - IT 11/2025, CBPMESP (Anexo A, Tabela 1).
