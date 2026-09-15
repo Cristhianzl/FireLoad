@@ -9,12 +9,18 @@ import { nav } from "@/locales/pt-BR";
 
 const LINKS = [
   { href: ROUTES.fireLoad, label: nav.fireLoad },
+  { href: ROUTES.storage, label: nav.storage },
   { href: ROUTES.extinguishers, label: nav.extinguishers },
   { href: ROUTES.trrf, label: nav.trrf },
   { href: ROUTES.exits, label: nav.exits },
+  { href: ROUTES.tables, label: nav.tables },
   { href: ROUTES.methodology, label: nav.methodology },
-  { href: ROUTES.norms, label: nav.norms },
 ];
+
+function isActive(pathname: string, href: string): boolean {
+  if (href === ROUTES.home) return pathname === href;
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -37,17 +43,17 @@ export function SiteHeader() {
         </Link>
 
         <nav
-          aria-label="Principal"
-          className="hidden items-center gap-1 md:flex"
+          aria-label={nav.primaryLabel}
+          className="hidden items-center gap-0.5 lg:flex"
         >
           {LINKS.map((link) => {
-            const active = pathname === link.href;
+            const active = isActive(pathname, link.href);
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`rounded-field px-3 py-2 text-sm font-medium transition-colors ${
+                className={`rounded-field px-2.5 py-2 text-sm font-medium transition-colors ${
                   active
                     ? "bg-base-200 text-base-content"
                     : "text-base-content/70 hover:bg-base-200 hover:text-base-content"
@@ -68,7 +74,7 @@ export function SiteHeader() {
           </Link>
           <button
             type="button"
-            className="btn btn-ghost btn-sm btn-square md:hidden"
+            className="btn btn-ghost btn-sm btn-square lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? nav.closeMenu : nav.openMenu}
@@ -82,14 +88,14 @@ export function SiteHeader() {
       <div
         id="mobile-menu"
         hidden={!open}
-        className="border-base-300 bg-base-100 border-t md:hidden"
+        className="border-base-300 bg-base-100 border-t lg:hidden"
       >
         <nav
-          aria-label="Principal"
+          aria-label={nav.primaryLabel}
           className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3"
         >
           {LINKS.map((link) => {
-            const active = pathname === link.href;
+            const active = isActive(pathname, link.href);
             return (
               <Link
                 key={link.href}

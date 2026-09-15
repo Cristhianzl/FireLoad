@@ -37,6 +37,34 @@ export const OCCUPANCY_GROUPS: string[] = [
   ...new Set(OCCUPANCIES.map((item) => item.grupo)),
 ].sort((a, b) => a.localeCompare(b, "pt-BR"));
 
+export type OccupancyGroup = {
+  letter: string;
+  label: string;
+  rows: Occupancy[];
+};
+
+export function groupOccupancies(
+  items: Occupancy[] = OCCUPANCIES,
+): OccupancyGroup[] {
+  const groups = new Map<string, OccupancyGroup>();
+  for (const item of items) {
+    const letter = item.divisao.charAt(0);
+    const group = groups.get(letter) ?? { letter, label: item.grupo, rows: [] };
+    group.rows.push(item);
+    groups.set(letter, group);
+  }
+  return [...groups.values()]
+    .sort((a, b) => a.letter.localeCompare(b.letter))
+    .map((group) => ({
+      ...group,
+      rows: [...group.rows].sort(
+        (a, b) =>
+          a.divisao.localeCompare(b.divisao, "pt-BR", { numeric: true }) ||
+          a.descricao.localeCompare(b.descricao, "pt-BR"),
+      ),
+    }));
+}
+
 export function searchOccupancies(query: string, limit = 20): Occupancy[] {
   if (!query.trim()) return [];
   return INDEX.filter((entry) => matchesQuery(entry.text, query))

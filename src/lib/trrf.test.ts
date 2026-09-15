@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 import {
   classifyPlacement,
+  describeTrrfCell,
   findRowByCode,
   HEIGHT_CLASSES,
   lookupTrrf,
   SUBSOLO_CLASSES,
   TRRF_ROWS,
+  TRRF_TABLE_CLASSES,
   type TrrfRow,
 } from "@/lib/trrf";
 
@@ -122,5 +124,40 @@ describe("TRRF dataset integrity", () => {
   it("should give every division a unique lookup by code", () => {
     const codes = TRRF_ROWS.flatMap((r) => r.codes);
     expect(new Set(codes).size).toBe(codes.length);
+  });
+});
+
+describe("describeTrrfCell", () => {
+  it("should read a numeric cell as minutes", () => {
+    expect(describeTrrfCell(90)).toEqual({ kind: "minutes", minutes: 90 });
+  });
+
+  it("should read a cross-reference cell as the item it points to", () => {
+    expect(describeTrrfCell("ver:A.2.3.4")).toEqual({
+      kind: "see-item",
+      item: "A.2.3.4",
+    });
+  });
+
+  it.each([null, undefined, "other"])(
+    "should treat %s as not tabulated",
+    (cell) => {
+      expect(describeTrrfCell(cell)).toEqual({ kind: "na" });
+    },
+  );
+
+  it("should order columns like the official table, basements first", () => {
+    expect(TRRF_TABLE_CLASSES.map((c) => c.key)).toEqual([
+      "s2",
+      "s1",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8",
+    ]);
   });
 });

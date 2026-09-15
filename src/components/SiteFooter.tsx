@@ -8,7 +8,7 @@ export function SiteFooter() {
   return (
     <footer className="border-base-300 bg-base-200 mt-auto border-t">
       <div className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="text-base-content/70 mt-4 max-w-sm text-sm leading-relaxed">
@@ -34,69 +34,27 @@ export function SiteFooter() {
             </div>
           </div>
 
-          <nav aria-label="Navegação do rodapé">
-            <h2 className="text-base-content text-sm font-semibold">
-              {footer.navigate}
-            </h2>
-            <ul className="mt-3 space-y-2 text-sm">
-              <li>
-                <Link
-                  href={ROUTES.fireLoad}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.fireLoad}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.extinguishers}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.extinguishers}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.trrf}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.trrf}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.exits}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.exits}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.methodology}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.methodology}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.norms}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.norms}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={ROUTES.about}
-                  className="link link-hover text-base-content/70"
-                >
-                  {nav.about}
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <FooterLinks
+            label={nav.footerLabel}
+            title={footer.navigate}
+            links={[
+              { href: ROUTES.fireLoad, label: nav.fireLoad },
+              { href: ROUTES.storage, label: nav.storage },
+              { href: ROUTES.extinguishers, label: nav.extinguishers },
+              { href: ROUTES.trrf, label: nav.trrf },
+              { href: ROUTES.exits, label: nav.exits },
+            ]}
+          />
+
+          <FooterLinks
+            title={footer.reference}
+            links={[
+              { href: ROUTES.tables, label: nav.tables },
+              { href: ROUTES.methodology, label: nav.methodology },
+              { href: ROUTES.norms, label: nav.norms },
+              { href: ROUTES.about, label: nav.about },
+            ]}
+          />
 
           <div>
             <h2 className="text-base-content text-sm font-semibold">
@@ -143,5 +101,33 @@ export function SiteFooter() {
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterLinks({
+  title,
+  label,
+  links,
+}: {
+  title: string;
+  label?: string;
+  links: { href: string; label: string }[];
+}) {
+  return (
+    <nav aria-label={label ?? title}>
+      <h2 className="text-base-content text-sm font-semibold">{title}</h2>
+      <ul className="mt-3 space-y-2 text-sm">
+        {links.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className="link link-hover text-base-content/70"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }

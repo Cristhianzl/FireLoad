@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHeader } from "@/components/PageHeader";
 import { ROUTES } from "@/lib/config";
 import { REFERENCES } from "@/lib/norms/references";
-import { breadcrumbSchema } from "@/lib/schema";
-import { nav, norms, seo } from "@/locales/pt-BR";
+import { pageInfo } from "@/lib/pages";
+import { pageMetadata } from "@/lib/seo";
+import { nav, norms } from "@/locales/pt-BR";
 
-export const metadata: Metadata = {
-  title: seo.norms.title,
-  description: seo.norms.description,
-  alternates: { canonical: ROUTES.norms },
-};
+const PAGE = pageInfo(ROUTES.norms);
+
+export const metadata: Metadata = pageMetadata(PAGE);
 
 const ORDER = [
   "it14",
@@ -25,11 +24,11 @@ const ORDER = [
 export default function NormsPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
-      <JsonLd
-        data={breadcrumbSchema([
+      <Breadcrumbs
+        items={[
           { name: nav.home, path: ROUTES.home },
-          { name: nav.norms, path: ROUTES.norms },
-        ])}
+          { name: nav.norms, path: PAGE.path },
+        ]}
       />
       <PageHeader title={norms.h1} intro={norms.intro} />
       <p className="text-base-content/60 mt-4 text-center text-sm">
@@ -56,11 +55,16 @@ export default function NormsPage() {
               <p className="text-base-content/80 mt-3 text-sm leading-relaxed">
                 {usage}
               </p>
+              {norms.publication[id] && (
+                <p className="text-base-content/60 mt-2 text-xs">
+                  {norms.publicationLabel}: {norms.publication[id]}
+                </p>
+              )}
               <a
                 href={ref.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link link-primary mt-3 inline-block text-sm font-medium"
+                className="link link-primary mt-3 inline-block text-sm font-medium break-all"
               >
                 {ref.url}
               </a>

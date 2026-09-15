@@ -1,13 +1,20 @@
+import type { FaqItem } from "@/lib/content-types";
 import { faq } from "@/locales/pt-BR";
 
-export function Faq() {
+export function Faq({
+  title = faq.title,
+  items = faq.items,
+}: {
+  title?: string;
+  items?: FaqItem[];
+}) {
   return (
     <div className="mx-auto max-w-3xl">
       <h2 className="font-display text-center text-2xl font-bold sm:text-3xl">
-        {faq.title}
+        {title}
       </h2>
       <div className="mt-8 space-y-3">
-        {faq.items.map((item) => (
+        {items.map((item) => (
           <details
             key={item.q}
             className="group rounded-box border-base-300 bg-base-100 border p-0"

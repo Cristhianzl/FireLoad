@@ -1,0 +1,1003 @@
+{
+ "source": "IT 14/2025 CBPMESP, Anexo B (Tabela de carga de incêndio relativa à altura de armazenamento, depósitos)",
+ "heightsM": [
+  1,
+  2,
+  4,
+  6,
+  8,
+  10
+ ],
+ "rows": [
+  {
+   "material": "Açúcar",
+   "loads": [
+    3780,
+    7560,
+    15120,
+    22680,
+    30240,
+    37800
+   ]
+  },
+  {
+   "material": "Açúcar, produtos de",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Acumuladores/baterias",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Adubos orgânicos",
+   "loads": [
+    450,
+    900,
+    1800,
+    2700,
+    3600,
+    4500
+   ]
+  },
+  {
+   "material": "Adubos químicos",
+   "loads": [
+    90,
+    180,
+    360,
+    540,
+    720,
+    900
+   ]
+  },
+  {
+   "material": "Alcatrão",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Algodão",
+   "loads": [
+    585,
+    1170,
+    2340,
+    3510,
+    4680,
+    5850
+   ]
+  },
+  {
+   "material": "Alimentação (alimentos industrializados)",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Aparelhos eletroeletrônicos",
+   "loads": [
+    180,
+    360,
+    720,
+    1080,
+    1440,
+    1800
+   ]
+  },
+  {
+   "material": "Aparelhos fotográficos",
+   "loads": [
+    270,
+    540,
+    1080,
+    1620,
+    2160,
+    2700
+   ]
+  },
+  {
+   "material": "Bebidas alcoólicas",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Borracha",
+   "loads": [
+    12870,
+    25740,
+    51480,
+    77220,
+    102960,
+    128700
+   ]
+  },
+  {
+   "material": "Artigos de borracha",
+   "loads": [
+    2250,
+    4500,
+    9000,
+    13500,
+    18000,
+    22500
+   ]
+  },
+  {
+   "material": "Brinquedos",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Cabos elétricos",
+   "loads": [
+    270,
+    540,
+    1080,
+    1620,
+    2160,
+    2700
+   ]
+  },
+  {
+   "material": "Cacau, produtos de",
+   "loads": [
+    2610,
+    5220,
+    10440,
+    15660,
+    20880,
+    26100
+   ]
+  },
+  {
+   "material": "Café cru",
+   "loads": [
+    1305,
+    2610,
+    5220,
+    7830,
+    10440,
+    13050
+   ]
+  },
+  {
+   "material": "Caixas de madeira",
+   "loads": [
+    270,
+    540,
+    1080,
+    1620,
+    2160,
+    2700
+   ]
+  },
+  {
+   "material": "Calçado",
+   "loads": [
+    180,
+    360,
+    720,
+    1080,
+    1440,
+    1800
+   ]
+  },
+  {
+   "material": "Celuloide",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Cera",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Cera, artigos de",
+   "loads": [
+    945,
+    1890,
+    3780,
+    5670,
+    7560,
+    9450
+   ]
+  },
+  {
+   "material": "Chocolate",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Colas combustíveis",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Colchões não sintéticos",
+   "loads": [
+    2250,
+    4500,
+    9000,
+    13500,
+    18000,
+    22500
+   ]
+  },
+  {
+   "material": "Coque",
+   "loads": [
+    945,
+    1890,
+    3780,
+    5670,
+    7560,
+    9450
+   ]
+  },
+  {
+   "material": "Cosméticos",
+   "loads": [
+    248,
+    495,
+    990,
+    1485,
+    1980,
+    2475
+   ]
+  },
+  {
+   "material": "Couro",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Couro, artigos de",
+   "loads": [
+    270,
+    540,
+    1080,
+    1620,
+    2160,
+    2700
+   ]
+  },
+  {
+   "material": "Couro sintético",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Couro sintético, artigos de",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Depósitos de mercadorias incombustíveis em pilhas de caixas de madeira ou de papelão",
+   "loads": [
+    90,
+    180,
+    360,
+    540,
+    720,
+    900
+   ]
+  },
+  {
+   "material": "Depósitos de mercadorias incombustíveis em pilhas de caixas de plástico",
+   "loads": [
+    90,
+    180,
+    360,
+    540,
+    720,
+    900
+   ]
+  },
+  {
+   "material": "Depósitos de mercadorias incombustíveis em estantes metálicas (sem embalagem)",
+   "loads": [
+    9,
+    18,
+    36,
+    54,
+    72,
+    90
+   ]
+  },
+  {
+   "material": "Depósitos de paletes de madeira",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Espumas sintéticas",
+   "loads": [
+    1125,
+    2250,
+    4500,
+    6750,
+    9000,
+    11250
+   ]
+  },
+  {
+   "material": "Espumas sintéticas, artigos de",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Farinha em sacos",
+   "loads": [
+    3780,
+    7560,
+    15120,
+    22680,
+    30240,
+    37800
+   ]
+  },
+  {
+   "material": "Feltro",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Feno, fardos de",
+   "loads": [
+    450,
+    900,
+    1800,
+    2700,
+    3600,
+    4500
+   ]
+  },
+  {
+   "material": "Fiação, produtos de fio",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Fiação, produtos de lã",
+   "loads": [
+    855,
+    1710,
+    3420,
+    5130,
+    6840,
+    8550
+   ]
+  },
+  {
+   "material": "Floricultura",
+   "loads": [
+    90,
+    180,
+    360,
+    540,
+    720,
+    900
+   ]
+  },
+  {
+   "material": "Fósforos",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Gorduras",
+   "loads": [
+    8100,
+    16200,
+    32400,
+    48600,
+    64800,
+    81000
+   ]
+  },
+  {
+   "material": "Gorduras comestíveis",
+   "loads": [
+    8505,
+    17010,
+    34020,
+    51030,
+    68040,
+    85050
+   ]
+  },
+  {
+   "material": "Grãos, sementes",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Instrumentos de ótica",
+   "loads": [
+    90,
+    180,
+    360,
+    540,
+    720,
+    900
+   ]
+  },
+  {
+   "material": "Legumes, verduras, hortifrutigranjeiros",
+   "loads": [
+    158,
+    315,
+    630,
+    945,
+    1260,
+    1575
+   ]
+  },
+  {
+   "material": "Leite em pó",
+   "loads": [
+    4050,
+    8100,
+    16200,
+    24300,
+    32400,
+    40500
+   ]
+  },
+  {
+   "material": "Lenha",
+   "loads": [
+    1125,
+    2250,
+    4500,
+    6750,
+    9000,
+    11250
+   ]
+  },
+  {
+   "material": "Madeira em troncos",
+   "loads": [
+    2835,
+    5670,
+    11340,
+    17010,
+    22680,
+    28350
+   ]
+  },
+  {
+   "material": "Madeira, aparas",
+   "loads": [
+    945,
+    1890,
+    3780,
+    5670,
+    7560,
+    9450
+   ]
+  },
+  {
+   "material": "Madeira, restos de",
+   "loads": [
+    1350,
+    2700,
+    5400,
+    8100,
+    10800,
+    13500
+   ]
+  },
+  {
+   "material": "Madeira, vigas e tábuas",
+   "loads": [
+    1890,
+    3780,
+    7560,
+    11340,
+    15120,
+    18900
+   ]
+  },
+  {
+   "material": "Malte",
+   "loads": [
+    6030,
+    12060,
+    24120,
+    36180,
+    48240,
+    60300
+   ]
+  },
+  {
+   "material": "Massas alimentícias",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Materiais de construção",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Materiais sintéticos",
+   "loads": [
+    2655,
+    5310,
+    10620,
+    15930,
+    21240,
+    26550
+   ]
+  },
+  {
+   "material": "Material de escritório",
+   "loads": [
+    585,
+    1170,
+    2340,
+    3510,
+    4680,
+    5850
+   ]
+  },
+  {
+   "material": "Medicamentos, embalagem",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Móveis de madeira",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Móveis, estofados sem espuma sintética",
+   "loads": [
+    180,
+    360,
+    720,
+    1080,
+    1440,
+    1800
+   ]
+  },
+  {
+   "material": "Painel de madeira aglomerada",
+   "loads": [
+    3015,
+    6030,
+    12060,
+    18090,
+    24120,
+    30150
+   ]
+  },
+  {
+   "material": "Papel",
+   "loads": [
+    3780,
+    7560,
+    15120,
+    22680,
+    30240,
+    37800
+   ]
+  },
+  {
+   "material": "Papel prensado",
+   "loads": [
+    945,
+    1890,
+    3780,
+    5670,
+    7560,
+    9450
+   ]
+  },
+  {
+   "material": "Papelaria, estoque",
+   "loads": [
+    495,
+    990,
+    1980,
+    2970,
+    3960,
+    4950
+   ]
+  },
+  {
+   "material": "Produtos farmacêuticos, estoque",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Peças automotivas",
+   "loads": [
+    360,
+    720,
+    1440,
+    2160,
+    2880,
+    3600
+   ]
+  },
+  {
+   "material": "Perfumaria, artigos de",
+   "loads": [
+    225,
+    450,
+    900,
+    1350,
+    1800,
+    2250
+   ]
+  },
+  {
+   "material": "Pneus",
+   "loads": [
+    810,
+    1620,
+    3240,
+    4860,
+    6480,
+    8100
+   ]
+  },
+  {
+   "material": "Portas de madeira",
+   "loads": [
+    810,
+    1620,
+    3240,
+    4860,
+    6480,
+    8100
+   ]
+  },
+  {
+   "material": "Produtos químicos combustíveis",
+   "loads": [
+    450,
+    900,
+    1800,
+    2700,
+    3600,
+    4500
+   ]
+  },
+  {
+   "material": "Queijos",
+   "loads": [
+    1125,
+    2250,
+    4500,
+    6750,
+    9000,
+    11250
+   ]
+  },
+  {
+   "material": "Resinas sintéticas",
+   "loads": [
+    1890,
+    3780,
+    7560,
+    11340,
+    15120,
+    18900
+   ]
+  },
+  {
+   "material": "Resinas sintéticas, placas de",
+   "loads": [
+    1530,
+    3060,
+    6120,
+    9180,
+    12240,
+    15300
+   ]
+  },
+  {
+   "material": "Sabão",
+   "loads": [
+    1890,
+    3780,
+    7560,
+    11340,
+    15120,
+    18900
+   ]
+  },
+  {
+   "material": "Sacos de papel",
+   "loads": [
+    5670,
+    11340,
+    22680,
+    34020,
+    45360,
+    56700
+   ]
+  },
+  {
+   "material": "Sacos de plástico",
+   "loads": [
+    11340,
+    22680,
+    45360,
+    68040,
+    90720,
+    113400
+   ]
+  },
+  {
+   "material": "Tabaco em bruto",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Tabaco, artigos de",
+   "loads": [
+    945,
+    1890,
+    3780,
+    5670,
+    7560,
+    9450
+   ]
+  },
+  {
+   "material": "Tapeçarias",
+   "loads": [
+    765,
+    1530,
+    3060,
+    4590,
+    6120,
+    7650
+   ]
+  },
+  {
+   "material": "Tecidos em geral",
+   "loads": [
+    900,
+    1800,
+    3600,
+    5400,
+    7200,
+    9000
+   ]
+  },
+  {
+   "material": "Tecidos sintéticos",
+   "loads": [
+    585,
+    1170,
+    2340,
+    3510,
+    4680,
+    5850
+   ]
+  },
+  {
+   "material": "Tecidos, fardos de algodão",
+   "loads": [
+    585,
+    1170,
+    2340,
+    3510,
+    4680,
+    5850
+   ]
+  },
+  {
+   "material": "Tecidos, seda artificial",
+   "loads": [
+    450,
+    900,
+    1800,
+    2700,
+    3600,
+    4500
+   ]
+  },
+  {
+   "material": "Toldos ou lonas",
+   "loads": [
+    450,
+    900,
+    1800,
+    2700,
+    3600,
+    4500
+   ]
+  },
+  {
+   "material": "Velas de cera",
+   "loads": [
+    10080,
+    20160,
+    40320,
+    60480,
+    80640,
+    100800
+   ]
+  },
+  {
+   "material": "Vernizes",
+   "loads": [
+    1125,
+    2250,
+    4500,
+    6750,
+    9000,
+    11250
+   ]
+  },
+  {
+   "material": "Vernizes de cera",
+   "loads": [
+    2250,
+    4500,
+    9000,
+    13500,
+    18000,
+    22500
+   ]
+  }
+ ]
+}

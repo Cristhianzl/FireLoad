@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { JsonLd } from "@/components/JsonLd";
+import { BulletList } from "@/components/BulletList";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHeader } from "@/components/PageHeader";
 import { RiskBadge } from "@/components/RiskBadge";
 import { ROUTES } from "@/lib/config";
 import { CLASS_A, CLASS_B, RISK_ORDER } from "@/lib/norms/tables";
 import { HEIGHT_CLASSES } from "@/lib/trrf";
-import { breadcrumbSchema } from "@/lib/schema";
-import { methodology, methodologyTable, nav, risk, seo } from "@/locales/pt-BR";
+import { pageInfo } from "@/lib/pages";
+import { pageMetadata } from "@/lib/seo";
+import { methodology, methodologyTable, nav, risk } from "@/locales/pt-BR";
 
-export const metadata: Metadata = {
-  title: seo.methodology.title,
-  description: seo.methodology.description,
-  alternates: { canonical: ROUTES.methodology },
-};
+const PAGE = pageInfo(ROUTES.methodology);
+
+export const metadata: Metadata = pageMetadata(PAGE);
 
 function Formula({ children }: { children: string }) {
   return (
@@ -22,35 +22,20 @@ function Formula({ children }: { children: string }) {
   );
 }
 
-function Legend({ items }: { items: string[] }) {
-  return (
-    <ul className="text-base-content/75 mt-3 space-y-1.5 text-sm">
-      {items.map((item) => (
-        <li key={item} className="flex gap-2">
-          <span
-            className="bg-primary mt-1.5 size-1.5 shrink-0 rounded-full"
-            aria-hidden="true"
-          />
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 export default function MethodologyPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
-      <JsonLd
-        data={breadcrumbSchema([
+      <Breadcrumbs
+        items={[
           { name: nav.home, path: ROUTES.home },
-          { name: nav.methodology, path: ROUTES.methodology },
-        ])}
+          { name: nav.methodology, path: PAGE.path },
+        ]}
       />
       <PageHeader
         title={methodology.h1}
         intro={methodology.intro}
         refIds={["it14", "it21", "it08", "it11", "nbr12693", "nbr14432", "tcc"]}
+        updatedAt={PAGE.updatedAt}
       />
 
       <div className="mx-auto mt-12 max-w-3xl space-y-12">
@@ -62,7 +47,21 @@ export default function MethodologyPage() {
             {methodology.section1Body}
           </p>
           <Formula>{methodology.section1Formula}</Formula>
-          <Legend items={methodology.section1Legend} />
+          <BulletList items={methodology.section1Legend} className="mt-3" />
+          <p className="rounded-box border-base-300 bg-base-200/60 text-base-content/80 mt-4 border p-4 text-sm leading-relaxed">
+            {methodology.section1Note}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-2xl font-bold">
+            {methodology.storageTitle}
+          </h2>
+          <p className="text-base-content/80 mt-3 leading-relaxed">
+            {methodology.storageBody}
+          </p>
+          <Formula>{methodology.storageFormula}</Formula>
+          <BulletList items={methodology.storageLegend} className="mt-3" />
         </section>
 
         <section>
@@ -136,7 +135,7 @@ export default function MethodologyPage() {
             {methodology.section4Body}
           </p>
           <Formula>{methodology.section4Formula}</Formula>
-          <Legend items={methodology.section4Legend} />
+          <BulletList items={methodology.section4Legend} className="mt-3" />
           <p className="rounded-box border-warning/30 bg-warning/10 text-base-content/80 mt-4 border p-4 text-sm leading-relaxed">
             {methodology.section4Note}
           </p>
@@ -175,7 +174,7 @@ export default function MethodologyPage() {
             {methodology.exitsBody}
           </p>
           <Formula>{methodology.exitsFormula}</Formula>
-          <Legend items={methodology.exitsLegend} />
+          <BulletList items={methodology.exitsLegend} className="mt-3" />
           <p className="rounded-box border-warning/30 bg-warning/10 text-base-content/80 mt-4 border p-4 text-sm leading-relaxed">
             {methodology.exitsNote}
           </p>

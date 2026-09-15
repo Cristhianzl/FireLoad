@@ -1,38 +1,45 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AnswerBlock } from "@/components/AnswerBlock";
 import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
+import { PageLinks } from "@/components/PageLinks";
 import { SpecificLoadCalculator } from "@/components/SpecificLoadCalculator";
+import { WorkedExample } from "@/components/WorkedExample";
 import { ROUTES } from "@/lib/config";
+import { pageInfo, TABLE_PATHS } from "@/lib/pages";
 import { faqSchema, webAppSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 import {
   common,
   example,
   glossary,
   home,
   methodology,
-  occupancy,
-  seo,
+  site,
   specific,
 } from "@/locales/pt-BR";
 
-export const metadata: Metadata = {
-  title: seo.home.title,
-  description: seo.home.description,
-  alternates: { canonical: "/" },
-};
-
+const PAGE = pageInfo(ROUTES.home);
 const STEPS = methodology.section1Legend;
+
+// The root layout title template does not apply to its own page, so the brand is appended here.
+export const metadata: Metadata = {
+  ...pageMetadata(PAGE),
+  title: { absolute: `${PAGE.title} · ${site.name}` },
+};
 
 export default function HomePage() {
   return (
     <>
       <JsonLd
-        data={webAppSchema(
-          "Calculadora de carga de incêndio",
-          metadata.description as string,
-          "/",
-        )}
+        data={webAppSchema({
+          name: home.h1,
+          description: PAGE.description,
+          path: PAGE.path,
+          refIds: ["it14", "it21", "nbr12693", "nbr14432"],
+          dateModified: PAGE.updatedAt,
+        })}
       />
       <JsonLd data={faqSchema()} />
 
@@ -74,113 +81,66 @@ export default function HomePage() {
       </section>
 
       <section className="border-base-300 bg-base-200/40 border-y">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
           <h2 className="font-display text-2xl font-bold sm:text-3xl">
-            {home.howTitle}
+            {home.answersTitle}
           </h2>
-          <p className="text-base-content/70 mt-2 max-w-2xl">{home.howSub}</p>
-          <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {STEPS.map((step, index) => (
-              <li
-                key={step}
-                className="rounded-box border-base-300 bg-base-100 border p-5"
-              >
-                <span className="font-display text-primary/70 text-2xl font-bold">
-                  {index + 1}
-                </span>
-                <p className="text-base-content/75 mt-2 text-sm leading-relaxed">
-                  {step}
-                </p>
-              </li>
+          <div className="mt-10 space-y-12">
+            {home.answers.map((answer) => (
+              <AnswerBlock key={answer.id} answer={answer} headingLevel="h3" />
             ))}
-          </ol>
-          <div className="mt-6">
-            <Link
-              href={ROUTES.methodology}
-              className="link link-primary font-medium"
-            >
-              {common.seeMethodology}
-            </Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
         <h2 className="font-display text-2xl font-bold sm:text-3xl">
-          {home.featuresTitle}
+          {home.howTitle}
         </h2>
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
-          <article className="rounded-box border-base-300 bg-base-100 border p-6">
-            <h3 className="font-display text-xl font-semibold">
-              {home.feature1Title}
-            </h3>
-            <p className="text-base-content/75 mt-2 text-sm leading-relaxed">
-              {home.feature1Text}
-            </p>
-            <Link
-              href="#calculadora"
-              className="link link-primary mt-4 inline-block text-sm font-medium"
+        <p className="text-base-content/70 mt-2 max-w-2xl">{home.howSub}</p>
+        <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {STEPS.map((step, index) => (
+            <li
+              key={step}
+              className="rounded-box border-base-300 bg-base-100 border p-5"
             >
-              {specific.calculate}
-            </Link>
-          </article>
-          <article className="rounded-box border-base-300 bg-base-100 border p-6">
-            <h3 className="font-display text-xl font-semibold">
-              {home.feature2Title}
-            </h3>
-            <p className="text-base-content/75 mt-2 text-sm leading-relaxed">
-              {home.feature2Text}
-            </p>
-            <Link
-              href={ROUTES.extinguishers}
-              className="link link-primary mt-4 inline-block text-sm font-medium"
-            >
-              {occupancy.calculate}
-            </Link>
-          </article>
-        </div>
-
-        <div className="rounded-box border-base-300 bg-secondary text-secondary-content mt-12 border p-8">
-          <h2 className="font-display text-2xl font-bold">
-            {home.openSourceTitle}
-          </h2>
-          <p className="text-secondary-content/80 mt-3 max-w-3xl leading-relaxed">
-            {home.openSourceText}
-          </p>
+              <span className="font-display text-primary/70 text-2xl font-bold">
+                {index + 1}
+              </span>
+              <p className="text-base-content/75 mt-2 text-sm leading-relaxed">
+                {step}
+              </p>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-6">
+          <Link
+            href={ROUTES.methodology}
+            className="link link-primary font-medium"
+          >
+            {common.seeMethodology}
+          </Link>
         </div>
       </section>
 
-      <section className="border-base-300 bg-base-200/40 border-t">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:py-20 lg:grid-cols-2">
-          <div>
-            <h2 className="font-display text-2xl font-bold sm:text-3xl">
-              {example.title}
-            </h2>
-            <p className="text-base-content/70 mt-2">{example.intro}</p>
-            <div className="rounded-box border-base-300 bg-base-100 mt-6 border p-5">
-              <p className="text-sm font-medium">{example.scenario}</p>
-              <ol className="mt-4 space-y-2">
-                {example.steps.map((step, index) => (
-                  <li
-                    key={step}
-                    className="text-base-content/80 flex gap-3 text-sm"
-                  >
-                    <span className="readout-value font-display text-primary/70 font-bold">
-                      {index + 1}
-                    </span>
-                    {step}
-                  </li>
-                ))}
-              </ol>
-              <p className="rounded-field bg-primary/10 text-primary mt-4 px-4 py-2 text-sm font-semibold">
-                {example.result}
-              </p>
-              <p className="text-base-content/55 mt-3 text-xs">
-                {example.note}
-              </p>
-            </div>
-          </div>
+      <section className="border-base-300 bg-base-200/40 border-y">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+          <PageLinks
+            title={home.featuresTitle}
+            intro={home.featuresSub}
+            paths={[
+              ROUTES.storage,
+              ROUTES.extinguishers,
+              ROUTES.trrf,
+              ROUTES.exits,
+            ]}
+          />
+        </div>
+      </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+        <div className="grid gap-10 lg:grid-cols-2">
+          <WorkedExample content={example} />
           <div>
             <h2 className="font-display text-2xl font-bold sm:text-3xl">
               {glossary.title}
@@ -200,12 +160,29 @@ export default function HomePage() {
             </dl>
           </div>
         </div>
+
+        <div className="rounded-box border-base-300 bg-secondary text-secondary-content mt-12 border p-8">
+          <h2 className="font-display text-2xl font-bold">
+            {home.openSourceTitle}
+          </h2>
+          <p className="text-secondary-content/80 mt-3 max-w-3xl leading-relaxed">
+            {home.openSourceText}
+          </p>
+        </div>
       </section>
 
-      <section className="border-base-300 bg-base-200/40 border-t">
+      <section className="border-base-300 bg-base-200/40 border-y">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-          <Faq />
+          <PageLinks
+            title={home.tablesTitle}
+            intro={home.tablesSub}
+            paths={TABLE_PATHS}
+          />
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+        <Faq />
       </section>
     </>
   );

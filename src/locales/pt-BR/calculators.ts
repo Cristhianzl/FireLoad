@@ -29,7 +29,7 @@ export const fireClass = {
 export const specific = {
   h1: "Calculadora de carga de incêndio específica",
   intro:
-    "Método determinístico do Anexo C da IT 14/2025, indicado para depósitos, explosivos e ocupações especiais sem carga de incêndio tabelada.",
+    "Método determinístico do Anexo C da IT 14/2025, que a norma aplica a explosivos e ocupações especiais sem carga de incêndio tabelada. Para depósitos, use a calculadora por altura de armazenamento.",
   formula: "qfi = Σ (Mi × Hi) / Af",
   areaLabel: "Área do piso (Af)",
   areaUnit: "m²",
@@ -173,4 +173,32 @@ export const trrf = {
   placeholder: "O TRRF aparece aqui.",
   warning:
     "Isto é o TRRF base da tabela. A ferramenta não aplica as isenções do Anexo A nem as reduções do Anexo E da IT 08, que dependem de análise de profissional habilitado.",
+};
+
+export const storage = {
+  h1: "Calculadora de carga de incêndio de depósitos",
+  intro:
+    "Pelo Anexo B da IT 14/2025: escolha o material armazenado, informe a altura das pilhas e a área, e veja a carga de incêndio, a classe de risco e uma estimativa de extintores.",
+  hint: "São 90 materiais do Anexo B. Comece a digitar para filtrar.",
+  searchLabel: "Material armazenado",
+  searchPlaceholder: "Busque o material (ex.: papel, pneus, paletes)",
+  heightLabel: "Altura de armazenamento",
+  heightUnit: "m",
+  heightHelp: "Altura das pilhas ou prateleiras, de 1 a 10 metros.",
+  heightPlaceholder: "Ex.: 3",
+  areaLabel: "Área de armazenamento",
+  areaUnit: "m²",
+  areaPlaceholder: "Ex.: 1500",
+  selectedLabel: "Material selecionado",
+  tableValuesLabel: "Carga de incêndio na tabela por altura",
+  calculate: "Calcular carga de incêndio",
+  reset: "Limpar",
+  noResults: "Nenhum material encontrado. Tente outro termo.",
+  errorSelect: "Selecione um material na busca.",
+  errorHeight: "Informe uma altura de armazenamento entre 1 e 10 metros.",
+  errorArea: "Informe uma área maior que zero.",
+  resultLabel: "Carga de incêndio do depósito",
+  interpolatedNote: (height: string) =>
+    `Valor interpolado entre as alturas vizinhas da tabela para ${height} m, como permite a nota do Anexo B.`,
+  exactNote: "Valor lido diretamente na tabela do Anexo B.",
 };

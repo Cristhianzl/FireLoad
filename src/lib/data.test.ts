@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { findMaterial, MATERIALS, searchMaterials } from "@/lib/materials";
 import {
   OCCUPANCIES,
+  groupOccupancies,
   OCCUPANCY_GROUPS,
   searchOccupancies,
 } from "@/lib/occupancies";
@@ -65,5 +66,34 @@ describe("occupancies dataset", () => {
     expect(searchOccupancies("hotel").length).toBeGreaterThan(0);
     expect(searchOccupancies("hospital").length).toBeGreaterThan(0);
     expect(searchOccupancies("escola").length).toBeGreaterThan(0);
+  });
+});
+
+describe("groupOccupancies", () => {
+  const groups = groupOccupancies();
+
+  it("should keep every occupancy row exactly once", () => {
+    expect(groups.reduce((sum, g) => sum + g.rows.length, 0)).toBe(809);
+  });
+
+  it("should order groups by letter and keep rows inside their group", () => {
+    const letters = groups.map((g) => g.letter);
+    expect(letters).toEqual([...letters].sort());
+    expect(
+      groups.every((g) => g.rows.every((r) => r.divisao.startsWith(g.letter))),
+    ).toBe(true);
+  });
+
+  it("should sort divisions numerically", () => {
+    const rows = groupOccupancies([
+      { descricao: "b", grupo: "X", divisao: "F-10", carga: 1 },
+      { descricao: "a", grupo: "X", divisao: "F-2", carga: 1 },
+      { descricao: "c", grupo: "X", divisao: "F-2", carga: 1 },
+    ])[0].rows;
+    expect(rows.map((r) => `${r.divisao}${r.descricao}`)).toEqual([
+      "F-2a",
+      "F-2c",
+      "F-10b",
+    ]);
   });
 });

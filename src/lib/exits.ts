@@ -16,6 +16,8 @@ export type ExitsRow = {
 export const EXITS_ROWS = exitsData.rows as ExitsRow[];
 export const UNIT_WIDTH_M = exitsData.unitWidthM as number;
 export const EXITS_SOURCE = exitsData.source as string;
+// IT 11/2025 item 4.4.2: floor for accesses, stairs and ramps in general occupancies.
+export const GENERAL_MIN_WIDTH_M = 1.2;
 
 export type Component = "acessos" | "escadas" | "portas";
 export const COMPONENTS: Component[] = ["acessos", "escadas", "portas"];

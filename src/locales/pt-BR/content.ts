@@ -1,21 +1,70 @@
+import type { GuideAnswer } from "@/lib/content-types";
+
 export const home = {
   eyebrow: "Segurança contra incêndio",
   h1: "Calculadora de carga de incêndio",
-  sub: "Some as massas dos materiais, informe a área e receba a carga de incêndio específica, a classe de risco e uma estimativa de extintores. Tudo baseado nas normas vigentes.",
+  sub: "Some as massas dos materiais, informe a área e receba a carga de incêndio específica, a classe de risco e uma estimativa de extintores, pelo método do Anexo C da IT 14/2025.",
   ctaPrimary: "Calcular carga de incêndio",
-  ctaSecondary: "Estimar por ocupação",
+  ctaSecondary: "Buscar carga por ocupação",
   trustLine:
     "Baseado na IT 14/2025, IT 21/2025, ABNT NBR 12693:2021 e NBR 14432.",
+  answers: [
+    {
+      id: "o-que-e-carga-de-incendio",
+      question: "O que é carga de incêndio?",
+      answer:
+        "Carga de incêndio é a energia que todos os materiais combustíveis de um ambiente podem liberar ao queimar. Dividida pela área do piso, ela vira a carga de incêndio específica, medida em megajoule por metro quadrado (MJ/m²), que classifica o risco da edificação e define o nível de exigência das medidas de segurança contra incêndio.",
+      quote: {
+        text: "Esta Instrução Técnica (IT) aplica-se às edificações e áreas de risco para classificação do risco e determinação do nível de exigência das medidas de segurança contra incêndio, atendendo ao previsto no Regulamento de segurança contra incêndio das edificações e áreas de risco do Estado de São Paulo.",
+        source: "IT 14/2025, item 2",
+      },
+    },
+    {
+      id: "risco-baixo-medio-alto",
+      question: "Qual carga de incêndio é risco baixo, médio ou alto?",
+      answer:
+        "A carga de incêndio específica de até 300 MJ/m² classifica a edificação como risco baixo. Acima de 300 e até 1200 MJ/m², o risco é médio. Acima de 1200 MJ/m², o risco é alto. A classe de risco define a capacidade dos extintores e a distância máxima até eles.",
+      table: {
+        caption: "Classificação do risco pela carga de incêndio específica",
+        head: ["Classe de risco", "Carga de incêndio específica"],
+        rows: [
+          ["Baixo", "até 300 MJ/m²"],
+          ["Médio", "acima de 300 até 1200 MJ/m²"],
+          ["Alto", "acima de 1200 MJ/m²"],
+        ],
+      },
+    },
+    {
+      id: "tabela-ou-calculo",
+      question: "Quando usar a tabela e quando calcular a carga de incêndio?",
+      answer:
+        "Na maioria das edificações, a carga de incêndio vem pronta das tabelas da IT 14/2025: o Anexo A traz o valor por ocupação e o Anexo B, por altura de armazenamento em depósitos. A soma de massas do Anexo C é para explosivos e ocupações especiais sem carga pré-definida.",
+      quote: {
+        text: "Para edificações destinadas a explosivos (Grupo “L”) e ocupações especiais (Grupo “M”), que não possuam carga de incêndio pré-definida conforme o Anexo A, aplica-se a metodologia constante do Anexo C (método determinístico).",
+        source: "IT 14/2025, item 4.1",
+      },
+    },
+    {
+      id: "area-do-levantamento",
+      question: "Qual área usar no levantamento da carga de incêndio?",
+      answer:
+        "Pela IT 14/2025, o levantamento pelo Anexo C é feito em módulos de no máximo 1000 m² de piso. Módulos maiores só valem quando os materiais têm potencial calorífico parecido e estão distribuídos por igual. A carga do piso analisado é a média dos 2 módulos de maior valor.",
+      quote: {
+        text: "O levantamento da carga de incêndio específica constante do Anexo C deve ser realizado em módulos de, no máximo, 1000 m² de área de piso considerado para o cálculo.",
+        source: "IT 14/2025, item 4.4",
+      },
+    },
+  ] satisfies GuideAnswer[],
   howTitle: "Como o cálculo é feito",
   howSub:
     "Nada aqui é chute. A conta segue a fórmula da norma e o resultado aponta a fonte.",
-  featuresTitle: "Duas formas de calcular",
-  feature1Title: "Por material",
-  feature1Text:
-    "Para depósitos e ocupações especiais sem carga tabelada. Você informa a massa de cada material combustível e a área do piso.",
-  feature2Title: "Por ocupação",
-  feature2Text:
-    "Para as ocupações já tabeladas na norma. Busque a atividade e use a carga de incêndio de referência.",
+  featuresTitle: "Outras calculadoras",
+  featuresSub:
+    "Cada uma segue a tabela ou a fórmula da instrução técnica correspondente.",
+  answersTitle: "Carga de incêndio em poucas palavras",
+  tablesTitle: "Tabelas oficiais em texto pesquisável",
+  tablesSub:
+    "Os valores das instruções técnicas que as calculadoras usam, abertos para consulta linha a linha.",
   openSourceTitle: "Aberto de ponta a ponta",
   openSourceText:
     "O código é público sob licença MIT. Qualquer pessoa pode ver exatamente como cada conta é feita e conferir contra a norma. Por trás da ferramenta existe o ExtinFire, um trabalho acadêmico de conclusão de curso em Engenharia Civil de 2018.",
@@ -25,7 +74,7 @@ export const methodology = {
   h1: "Metodologia e fórmulas",
   intro:
     "Esta página descreve, passo a passo, como a FireLoad calcula a carga de incêndio, classifica o risco e estima a quantidade de extintores. Toda regra aponta a norma de onde saiu.",
-  section1Title: "1. Carga de incêndio específica",
+  section1Title: "1. Carga de incêndio específica (Anexo C)",
   section1Body:
     "A carga de incêndio específica é a energia que os materiais combustíveis de um ambiente liberariam ao queimar, dividida pela área do piso. O método determinístico do Anexo C da IT 14/2025 usa a soma da massa de cada material multiplicada pelo seu potencial calorífico específico.",
   section1Formula: "qfi = Σ (Mi × Hi) / Af",
@@ -35,13 +84,25 @@ export const methodology = {
     "Hi: potencial calorífico específico do material, em MJ/kg (Tabela C.1 da IT 14/2025).",
     "Af: área do piso considerada para o cálculo, em m².",
   ],
-  section2Title: "2. Classificação do risco",
+  section1Note:
+    "Pelos itens 4.1, 4.4 e 4.4.1 da IT 14/2025, este método vale para explosivos (Grupo L) e ocupações especiais (Grupo M) sem carga tabelada. O levantamento é feito em módulos de até 1000 m² de piso, e a carga do piso é a média dos 2 módulos de maior valor.",
+  storageTitle: "2. Carga de incêndio de depósitos (Anexo B)",
+  storageBody:
+    "Depósitos (Grupo J) não usam a soma de massas. Pelo item 4.3 da IT 14/2025, a carga de incêndio sai da tabela do Anexo B, pelo material armazenado e pela altura de armazenamento, de 1 a 10 metros. Entre as alturas tabeladas, a nota do Anexo B permite interpolar.",
+  storageFormula: "q = q₁ + (h − h₁) / (h₂ − h₁) × (q₂ − q₁)",
+  storageLegend: [
+    "q: carga de incêndio do depósito na altura h, em MJ/m².",
+    "h₁ e h₂: alturas da tabela logo abaixo e logo acima de h, em metros.",
+    "q₁ e q₂: cargas de incêndio da tabela nessas alturas.",
+    "Fora da faixa de 1 a 10 m a ferramenta não extrapola, porque a tabela não traz valores.",
+  ],
+  section2Title: "3. Classificação do risco",
   section2Body:
     "Com a carga de incêndio em mãos, o risco é classificado em três faixas, conforme a NBR 14432 e o Regulamento de Segurança Contra Incêndio do Estado de São Paulo.",
-  section3Title: "3. Capacidade extintora e distância",
+  section3Title: "4. Capacidade extintora e distância",
   section3Body:
     "A capacidade extintora mínima e a distância máxima a percorrer até um extintor vêm das Tabelas 6 e 7 da ABNT NBR 12693:2021, alinhadas à Tabela 1 da IT 21/2025.",
-  section4Title: "4. Estimativa da quantidade",
+  section4Title: "5. Estimativa da quantidade",
   section4Body:
     "A norma define a capacidade e a distância, mas não uma fórmula fechada de quantidade. A FireLoad estima o número de extintores pela área que cada um cobre: um círculo de raio igual à distância máxima a percorrer, reduzido conforme os obstáculos do ambiente. Esse é o método proposto no ExtinFire, o trabalho de conclusão de curso de 2018 que deu origem à ferramenta, validado contra projetos reais.",
   section4Formula: "N = teto( Af / (π × d² × coeficiente) )",
@@ -53,13 +114,13 @@ export const methodology = {
   ],
   section4Note:
     "Por ser uma estimativa geométrica, o resultado é um ponto de partida. O projeto final é sempre responsabilidade de profissional habilitado.",
-  trrfTitle: "5. TRRF (tempo requerido de resistência ao fogo)",
+  trrfTitle: "6. TRRF (tempo requerido de resistência ao fogo)",
   trrfBody:
     "O TRRF é o tempo, em minutos, que os elementos estruturais precisam resistir ao fogo. A consulta usa a tabela do Anexo B da IT 08, cruzando a divisão de ocupação com a classe de altura da edificação (P1 a P8) ou a profundidade do subsolo (S1 e S2).",
   trrfClassesTitle: "Classes de altura (pavimentos acima do solo)",
   trrfNote:
     "A ferramenta faz a consulta base da tabela. Ela não aplica as isenções do Anexo A nem as reduções do Anexo E da IT 08, que dependem de profissional habilitado.",
-  exitsTitle: "6. Lotação e saídas de emergência",
+  exitsTitle: "7. Lotação e saídas de emergência",
   exitsBody:
     "A população de um pavimento vem de um coeficiente por ocupação (Tabela 1 da IT 11): por área, por dormitório, por leito ou por vaga. A largura das saídas é dimensionada por unidades de passagem, cada uma com 0,55 m.",
   exitsFormula: "N = teto( População / C )   e   Largura = N × 0,55 m",
@@ -89,7 +150,7 @@ export const norms = {
   updatedAt: "Última verificação das versões: setembro de 2026.",
   usageTitle: "Onde cada norma é usada",
   usage: {
-    it14: "Fórmula da carga de incêndio específica, tabela de potenciais caloríficos e cargas por ocupação.",
+    it14: "Cargas de incêndio por ocupação (Anexo A) e por altura de armazenamento em depósitos (Anexo B), fórmula da carga de incêndio específica (Anexo C) e tabela de potenciais caloríficos (Tabela C.1).",
     it08: "Tabela de tempo requerido de resistência ao fogo (TRRF) por ocupação e altura, no Anexo B.",
     it11: "Coeficientes de população e capacidade das unidades de passagem para o dimensionamento das saídas (Tabela 1).",
     it21: "Critérios de proteção por extintores e distância máxima a percorrer no Estado de São Paulo.",
@@ -99,6 +160,13 @@ export const norms = {
       "Classificação da carga de incêndio em risco baixo, médio e alto.",
     tcc: "Método de estimativa da quantidade de extintores por área coberta.",
   },
+  publicationLabel: "Publicação",
+  publication: {
+    it14: "Atualizada pela Portaria nº CCB 003/800/25, Diário Oficial do Estado de 20/03/2025.",
+    it21: "Atualizada pela Portaria nº CCB 003/800/25, Diário Oficial do Estado de 20/03/2025.",
+    it11: "Atualizada pela Portaria nº CCB 003/800/25, Diário Oficial do Estado de 20/03/2025.",
+    it08: "Atualizada pela Portaria nº CCB 021/800/20, Diário Oficial do Estado nº 132, de 04/07/2020.",
+  } as Record<string, string>,
 };
 
 export const about = {
@@ -115,22 +183,25 @@ export const about = {
   tccLink: "Ver o TCC na UFU",
   author:
     "Autoria: Cristhian Zanforlin Lousa, engenheiro civil formado pela Universidade Federal de Uberlândia (UFU). O método e os dados vêm das normas citadas e do trabalho de conclusão de curso.",
+  authorTitle: "Quem mantém a ferramenta",
+  authorProfile: "Perfil no GitHub",
+  knowsAbout: [
+    "Carga de incêndio",
+    "Segurança contra incêndio em edificações",
+    "Dimensionamento de extintores de incêndio",
+    "Instruções Técnicas do Corpo de Bombeiros de São Paulo",
+  ],
+  updatesTitle: "Como as normas são verificadas",
+  updatesText:
+    "Cada valor foi transcrito da publicação oficial da norma e é conferido por testes automatizados. Quando uma instrução técnica é atualizada, a tabela correspondente é revisada e a data de verificação muda na página de normas.",
 };
 
 export const faq = {
   title: "Perguntas frequentes",
   items: [
     {
-      q: "O que é carga de incêndio?",
-      a: "É a quantidade de energia que os materiais combustíveis de um ambiente poderiam liberar ao queimar, dividida pela área do piso. Ela é medida em megajoule por metro quadrado (MJ/m²) e serve para classificar o risco de incêndio de uma edificação.",
-    },
-    {
       q: "Como a carga de incêndio é calculada?",
       a: "Somando a massa de cada material combustível multiplicada pelo seu potencial calorífico específico, e dividindo pela área do piso. É a fórmula do Anexo C da IT 14/2025: qfi = Σ (Mi × Hi) / Af.",
-    },
-    {
-      q: "Qual a diferença entre risco baixo, médio e alto?",
-      a: "Segundo a NBR 14432, a carga de incêndio até 300 MJ/m² é risco baixo, acima de 300 até 1200 MJ/m² é risco médio e acima de 1200 MJ/m² é risco alto.",
     },
     {
       q: "A quantidade de extintores é exata?",
@@ -146,7 +217,7 @@ export const faq = {
     },
     {
       q: "Como calcular a carga de incêndio de um depósito?",
-      a: "Some a massa de cada material combustível multiplicada pelo seu potencial calorífico específico (Hi) e divida pela área do piso. Por exemplo, um depósito de papel com 60.000 kg (Hi 17 MJ/kg) em 1.500 m² dá 680 MJ/m², o que classifica o local como risco médio.",
+      a: "Pela IT 14/2025, depósitos (Grupo J) usam obrigatoriamente a tabela do Anexo B, que dá a carga de incêndio em MJ/m² pelo material armazenado e pela altura de armazenamento, de 1 a 10 metros. Entre as alturas da tabela, a norma permite interpolar. A FireLoad tem uma calculadora própria para depósitos.",
     },
     {
       q: "O que significa MJ/m²?",
@@ -188,6 +259,18 @@ export const glossary = {
       def: "A eficácia mínima do extintor, como 2-A ou 20-B, definida na NBR 12693:2021.",
     },
     {
+      term: "Altura de armazenamento",
+      def: "Altura das pilhas ou prateleiras de um depósito. Define a carga de incêndio no Anexo B da IT 14/2025.",
+    },
+    {
+      term: "TRRF",
+      def: "Tempo requerido de resistência ao fogo: tempo mínimo que um elemento construtivo resiste ao incêndio-padrão (IT 08).",
+    },
+    {
+      term: "Unidade de passagem",
+      def: "Largura de 0,55 m usada para dimensionar acessos, escadas e portas de saídas de emergência (IT 11/2025).",
+    },
+    {
       term: "Distância máxima a percorrer",
       def: "O maior caminho que uma pessoa pode andar até alcançar um extintor, conforme o risco.",
     },
@@ -197,7 +280,7 @@ export const glossary = {
 export const example = {
   title: "Exemplo resolvido",
   intro:
-    "Um depósito de papel para mostrar o cálculo do começo ao fim, usando a fórmula da norma.",
+    "O exemplo do trabalho de conclusão de curso que deu origem à ferramenta, para mostrar a fórmula do Anexo C do começo ao fim.",
   scenario: "Depósito de papel: 60.000 kg de papel (Hi 17 MJ/kg) em 1.500 m².",
   steps: [
     "Multiplique a massa pelo potencial calorífico: 60.000 kg × 17 MJ/kg = 1.020.000 MJ.",
@@ -206,5 +289,5 @@ export const example = {
     "Para risco médio, a capacidade mínima classe A é 3-A, com distância máxima de 20 m.",
   ],
   result: "Carga de incêndio de 680 MJ/m², risco médio.",
-  note: "Este é o exemplo do trabalho de conclusão de curso que deu origem à ferramenta.",
+  note: "O caso ilustra a fórmula. Pela IT 14/2025, um depósito real usa a tabela do Anexo B, pelo material e pela altura de armazenamento.",
 };
