@@ -1,20 +1,17 @@
 import type { NextConfig } from "next";
 
-// The Vercel alias serves the same pages; send it to the canonical domain so
-// search engines never index two copies of the site.
+// Aliases serve identical pages; redirect so engines index a single copy.
 const CANONICAL_HOST = "fireload.com.br";
-const VERCEL_ALIAS_HOST = "fireload.vercel.app";
+const ALIAS_HOSTS = ["fireload.vercel.app", "www.fireload.com.br"];
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: VERCEL_ALIAS_HOST }],
-        destination: `https://${CANONICAL_HOST}/:path*`,
-        permanent: true,
-      },
-    ];
+    return ALIAS_HOSTS.map((host) => ({
+      source: "/:path*",
+      has: [{ type: "host" as const, value: host }],
+      destination: `https://${CANONICAL_HOST}/:path*`,
+      permanent: true,
+    }));
   },
 };
 
